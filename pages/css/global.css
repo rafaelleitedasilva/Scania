@@ -1,0 +1,14 @@
+:root{
+    --dark-blue:#0E45A1; 
+    --dark:#040405;
+    --light-blue:#A7BFE8;
+    --red:#F0100C;
+    --yellow:#EBE700;
+    --silver:#D8DDE2;
+    --blue-boy:#009DFF;
+}
+
+.back-to-top{
+    background-color: var(--dark);
+    border: var(--dark);
+}
