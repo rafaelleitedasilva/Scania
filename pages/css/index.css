@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -15,8 +17,6 @@
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
 }
@@ -24,10 +24,7 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 40px 0;
-    color: var(--light);
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 22px;
     text-transform: uppercase;
     outline: none;
 }
@@ -40,6 +37,18 @@
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+}
+
+.navbar>a>h1{
+    color: white !important;
+}
+
+.nav-item:hover{
+    color: snow !important;
+}
+
+.nav-item{
+    font-family: 'Poppins' !important;
 }
 
 @media (max-width: 991.98px) {
@@ -76,51 +85,6 @@
         transition: .5s;
         opacity: 1;
     }
-}
-
-
-/*** Header ***/
-.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .85);
-    z-index: 1;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
-}
-
-@media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 450px;
-    }
-    
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/carousel-1.jpg) center center no-repeat;
-    background-size: cover;
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    color: var(--light);
 }
 
 .back-to-top {

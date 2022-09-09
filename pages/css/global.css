@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
+
 :root{
     --dark-blue:#0E45A1; 
     --dark:#040405;
@@ -7,6 +9,16 @@
     --silver:#D8DDE2;
     --blue-boy:#009DFF;
 }
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-family: 'Archivo', sans-serif;
+}
+
 
 .back-to-top{
     background-color: var(--dark);
