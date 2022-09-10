@@ -1,0 +1,125 @@
+.banneer{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    filter: opacity(20%);
+}
+
+
+.banner h1{
+    position: absolute;
+    font-weight:800;
+    font-size: 5rem;
+    top: 650px;
+    /* bottom:1px; */
+    left: 50px;
+}
+.desc{
+    display: flex;
+    margin: 150px auto;
+    text-align: justify;
+    width: 700px;
+    height: 190px;
+}
+.desc p:nth-child(1){
+    /* color: #fff; */
+    color: var(--silver);
+    line-height: 30px;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr  0.5fr 1fr  0.5fr 0.5fr;
+}
+.portfolio h1{
+    grid-column: span 3;
+    grid-row: 1/2;
+    color: var(--silver);
+}
+.portfolio h3{
+    grid-row: 2/3;
+    grid-column: span 3;
+}
+
+.portfolio h1, h3, h2{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+
+/* CARROSSEL */
+.contentSlideShow{
+    grid-row: 5/6;
+    grid-column: 1/5;
+    width: 1150px;
+    height: 650px;
+
+    margin-top: 30px;
+    
+    border: 5px solid black;
+
+    overflow: hidden;
+}
+
+.navegation{
+    position: absolute;
+    /* distancia do posicionamento da bar nav */
+    top: 1850px;
+ 
+    left: 58%;
+    transform: translate(-100%);
+    display: flex;
+    grid-row: 6/7;
+    grid-column: 1/5;
+}
+.bar{
+    width: 70px;
+    height: 17px;
+
+    border: 3px solid rgb(0, 0, 0);
+
+    background-color:  var(--red);
+
+    margin: 6px; /*faz o margin entre bar*/
+   
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bar:hover{
+    background-color: var(--gray);
+}
+
+.slides input{
+    display: none;
+}
+.slides{
+    display: flex; /*faz ccom q as imagens fiquem lado a lado no div slideshow*/
+    width:400%;
+    height: 100%;   
+    
+}
+
+.slide{
+    display: flex;
+    width: 25%;
+    transition: .6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -25%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -50%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -75%;
+}

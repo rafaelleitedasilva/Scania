@@ -10,15 +10,12 @@
     --blue-boy:#009DFF;
 }
 
-*{
+body{
     font-family: 'Poppins', sans-serif;
 }
-
 h1{
     font-family: 'Archivo', sans-serif;
 }
-
-
 .back-to-top{
     background-color: var(--dark);
     border: var(--dark);
