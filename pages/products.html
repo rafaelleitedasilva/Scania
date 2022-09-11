@@ -46,10 +46,12 @@
         </div>
 
         <div class="portfolio">
-            <h1>PORTFÓLIO DE CAMINHÕES</h1>
+            <h1 class="title-text">PORTFÓLIO DE CAMINHÕES</h1>
             <h3>Conheça os principais modelos de cada linha</h3>
 
-            <h2 id="line-type"> A Linha P</h2>
+            <h2 id="line-type">
+                Linha P
+            </h2>
 
             <div class="contentSlideShow">
                 <div class="slides"> <!--inicio do slideshow-->
@@ -61,55 +63,146 @@
                     <input type="radio" name="slide" id="slide6">
                     <input type="radio" name="slide" id="slide7">
 
-                    <div class="slide s1" id="slide-news1">
-                        <img src="img/products/p-series.jpeg" alt="">
+                    <div class="slide s1" id="slide1">
                     </div>
     
-                    <div class="slide" id="slide-news2">
-                        <img src="img/products/g-series.jpeg" alt="">
+                    <div class="slide" id="slide2">
                     </div>
     
-                    <div class="slide" id="slide-news3">
-                        <img src="img/products/r-series.jpeg" alt="">
+                    <div class="slide" id="slide3">
                     </div>
     
-                    <div class="slide" id="slide-news4">
-                        <img src="img/products/s-series.jpeg" alt="">
+                    <div class="slide" id="slide4">
+                    
                     </div>
 
-                    <div class="slide" id="slide-news4">
-                        <img src="img/products/v8-series.jpeg" alt="">
+                    <div class="slide" id="slide5">
+                      
                     </div>
 
-                    <div class="slide" id="slide-news4">
-                        <img src="img/products/xt-series.jpeg" alt="">
+                    <div class="slide" id="slide6">
+                      
                     </div>
 
-                    <div class="slide" id="slide-news4">
-                        <img src="img/products/gas-series.jpeg" alt="">
+                    <div class="slide" id="slide7">
+                        
                     </div>
                 </div>
-                <div class="desc-line">
-                    <p>A linha P da Scania é nossa linha de cabines mais versátil, ideal para operações urbanas e regionais e aprovada em construção e outras condições exigentes.</p>
-                    <div class="esp-tec">                        
-                        <a href="#">Especificações Técnicas</a>
-                    </div>
+                <div  id="desc_line" class="desc-line">
+                    <p>
+                        A linha P da Scania é nossa linha de cabines mais versátil, ideal para operações urbanas e regionais e aprovada em construção e outras condições exigentes.
+                    </p>    
+                </div>
+                <div class="esp-tec">                        
+                    <a href="https://www.scania.com/br/pt/home/products/trucks/p-series.html" id="link">Especificações Técnicas</a>
                 </div>
                 <div class="navegation">
-                    <label class="bar" for="slide1"></label>
-                    <label class="bar" for="slide2"></label>
-                    <label class="bar" for="slide3"></label>
-                    <label class="bar" for="slide4"></label>
-                    <label class="bar" for="slide5"></label>
-                    <label class="bar" for="slide6"></label>
-                    <label class="bar" for="slide7"></label>
+                    <label class="bar" for="slide1" onclick="changeLine1()"></label>
+                    <label class="bar" for="slide2"onclick="changeLine2()"></label>
+                    <label class="bar" for="slide3" onclick="changeLine3()"></label>
+                    <label class="bar" for="slide4" onclick="changeLine4()"></label>
+                    <label class="bar" for="slide5" onclick="changeLine5()"></label>
+                    <label class="bar" for="slide6" onclick="changeLine6()"></label>
+                    <label class="bar" for="slide7" onclick="changeLine7()"></label>
                 </div>
             </div>
            
         </div>
+<!-- https://configurator.scania.com/go/go-start/5267/5657/0/ -->
+        <div class="configurator">
+            <h1 class="title-text">MONTE O SEU SCANIA</h1>
+            <h3>
+               Configure o seu próximo caminhão
+            </h3>
+            <div class="config-banner">
+                <img src="" alt="" >
+            </div>
+
+            <div class="go-to">              
+            </div>
+        </div>
+
+        <div class="bus-container">
+            <h1 class = "title-text">Ônibus</h1>
+            <!-- <div class="paralax-bus"> -->
+            <img src="img/products/bus.jpeg" alt="" srcset="">
+            <!-- </div> -->
+            <div class="desc-bus">
+                <p>Transportar pessoas e mudar ideias. Essa é a nossa missão. A Scania oferece uma linha completa com 28 modelos de chassis para o segmento de transporte urbano, intermunicipal, fretamento, rodoviário e de turismo, com opções de motor traseiro ou dianteiro.</p>
+            </div>
+            <a href="#">Acesse o portal do Implementador Scania</a>
+        </div>
+
+         <div class="paralax-sol">
+    
+        </div>
+    
+        <div class="solutions"> 
+            <h1 class="title-text">Soluções de Potência</h1>
+    
+            <div class="col_one">
+                <img src="img/products/solution-1.jpeg" alt="">
+                <p>Os sistemas de energia industrial da Scania são desenvolvidos para atender as operações e ambientes mais exigentes, tornando-os perfeitamente adequados para equipamentos de construção e manuseio de materiais, máquinas agrícolas e veículos para fins especiais.</p>
+            </div>  
+            <div class="col_two">
+                <img src="img/products/solution-2.jpeg" alt="">
+                <p>Usados como fonte primária de energia em locais remotos e locais de entretenimento ou como energia de reserva em operações exigentes e reservas sociais críticas, os sistemas de energia Scania fornecem energia ininterrupta quando e onde for necessário.</p>
+            </div>
+            <div class="row_two">
+                <img src="img/products/solution-3.jpeg" alt="">
+                <p>Desde embarcações como lanchas até a tração de barcos pesados e a gestão de aplicações auxiliares pesadas, os sistemas de energia da Scania podem ser encontrados em muitas operações marítimas diferentes.</p>
+            </div> 
+        </div>
+<!-- 3 colunas, 4 linhas -->
+        <div class="atributes">
+            <h1 class = "title-text">Atributos</h1>
+
+            <div class="first">
+                <h3>Eficiência de Combustíveis</h3>
+                <img src="img/products/atr1.jpeg" alt="">
+                <p></p>
+            </div>
+
+            <div class="sec">
+                <h3>Ecolution</h3>
+                <img src="img/products/atr3.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odit tenetur nulla ratione amet consectetur fugit exercitationem deleniti quas inventore eum repellat, officiis distinctio error. Quam doloribus natus atque commodi?</p>
+            </div>
+
+            <div class="th">
+                <h3>Combustíveis Alternativos</h3>
+                <img src="img/products/atr4.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, temporibus voluptates sit ipsa aliquid maiores iure id dolorum accusantium eum assumenda optio illo a dolore fugiat! Totam aliquid modi similique!</p>
+            </div>
+
+            <div class="four">
+                <h3>Eletrificação</h3>
+                <img src="img/products/atr5.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sapiente soluta minima perspiciatis, eos enim eum sit voluptate sunt cum recusandae laborum in consectetur perferendis temporibus repudiandae natus cupiditate illum?</p>
+            </div>
+
+            <div class="five">
+                <h3>Conectividade</h3>
+                <img src="img/products/atr6.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quisquam quis molestias, eaque doloribus qui recusandae nemo architecto quasi, laudantium eos accusamus sequi ratione autem, consequuntur eveniet facere quidem ducimus?</p>
+            </div>
+
+            <div class="six">
+                <h3>Segurança</h3>
+                <img src="img/products/atr7.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quas perspiciatis adipisci mollitia, ut architecto animi delectus obcaecati nobis itaque quos eligendi blanditiis praesentium rerum fugiat veritatis sapiente dolorum sed.</p>
+            </div>
+
+            <div class="seven">
+                <h3>Disponibilidade</h3>
+                <img src="img/products/atr2.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corporis aperiam impedit rerum officia atque praesentium nobis maiores cum sit laboriosam voluptatem assumenda adipisci eveniet facilis excepturi tempore, ab illo!</p>
+            </div>
+
+        </div>
 
     </div>
     
-   
+   <script src="js/products.js"></script>
 </body>
 </html>
