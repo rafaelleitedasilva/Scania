@@ -137,6 +137,10 @@ h3.textoProduto{
     text-align: center;
 }
 
+.team-img{
+    text-align: center;
+}
+
 @keyframes loadingX {
 	0% {
 		transform: translateX(-50%);
