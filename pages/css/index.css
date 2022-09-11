@@ -124,6 +124,19 @@ h3.textoProduto{
     background-color: rgb(0, 0, 0) !important;
 }
 
+.perfil{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+
+.team-social{
+    text-align: center;
+}
+
 @keyframes loadingX {
 	0% {
 		transform: translateX(-50%);
