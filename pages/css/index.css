@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
 
 #spinner {
     opacity: 0;
@@ -57,8 +58,70 @@
     background-color: rgba(240, 255, 255, 0.112);
 }
 
-.uppercase{
-    text-transform: uppercase;
+.service-item{
+    height: 250px !important;
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.service-item .btn {
+    position: absolute;
+    right: -50px;
+    border-radius: 0px !important;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(63, 63, 63);
+    opacity: 0;
+} 
+
+.service-item:hover{
+    animation: aproxima 1s both;
+    cursor: pointer !important;
+}
+
+.service-item:hover h3{
+    animation: aparece 1s both;
+}
+
+.servico{
+    width: 100vw !important;
+    background-repeat: repeat !important; 
+    padding: 54px;
+    cursor: default;
+}
+
+h3.textoProduto{
+    transform: rotate(270deg);
+    width: 90% !important;
+    text-align: center;
+    font-size: 35px;
+    font-family:'Montserrat', cursive !important;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+}
+
+.service-item:focus{
+    transform: scale(1.5);
+}
+
+.service-item:focus h3{
+    opacity: 1;
+}
+
+.mais{
+    display: block;
+    line-height: 35px;
+    margin-bottom: auto;
+    height: 50px !important;
+    background-color: aliceblue !important;
+}
+
+.mais:hover{
+    color: white !important;
+    background-color: rgb(0, 0, 0) !important;
 }
 
 @keyframes loadingX {
@@ -67,6 +130,25 @@
 	}
 	100% {
 		transform: translateX(0%);
+	}
+}
+
+@keyframes aproxima {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.5);
+	}
+}
+
+@keyframes aparece {
+	0% {
+            opacity: 0;
+
+	}
+	100% {
+            opacity: 1;
 	}
 }
 
@@ -93,5 +175,13 @@
 
     .esquerda{
         margin-right: 25%;
+    }
+
+}
+
+@media(max-width:992px){
+    .servico{
+        background-image: url('../img/index/estrada2.png') !important;
+        background-size: contain;
     }
 }
