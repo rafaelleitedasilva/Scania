@@ -15,10 +15,83 @@
 
 .Aurora{
     height: 80vh;
-    padding-left: 20%;
+    padding-left: 10%;
     padding-right: 10%;
     padding-top: 100px;
     background-image: url('../img/index/truck.png');
     background-repeat: no-repeat;
     text-align: right;
+}
+
+.primeiroTitulo{
+    font-family: 'Archivo';
+    display: inline-flex;
+    font-size: 18vw;
+}
+
+.fraseTitulo{
+    font-family: 'Archivo';
+    display: inline-flex;
+    animation: loadingX 1s linear;
+    text-transform: uppercase;
+}
+
+.agrupar{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.tituloSobre{
+    background-color: rgba(240, 255, 255, 0.112);
+}
+
+.textoSobre{
+    color: white;
+    text-align: justify;
+}
+
+.tituloPrincipalSobre{
+    font-family: 'Poppins';
+    width: 55% !important;
+    background-color: rgba(240, 255, 255, 0.112);
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+@keyframes loadingX {
+	0% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes loadingY {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+@media (max-width: 500px) {
+    .primeiroTitulo{
+        display: block;
+        font-size: 8.5vh;
+    }
+    .fraseTitulo{
+        display: block;
+        font-size: 1.9vh;
+        animation: loadingY 1s linear;
+    }
+
+    .esquerda{
+        margin-right: 25%;
+    }
 }

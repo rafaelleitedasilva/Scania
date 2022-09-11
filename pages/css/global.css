@@ -28,6 +28,10 @@ body{
     background-color: var(--red) !important;
 }
 
+/* .tituloSobre{
+    color: var(--dark-blue) !important;
+} */
+
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--silver);
@@ -44,7 +48,7 @@ body{
 .navbar{
     background-color: #040405 !important;
     border-radius: 0px 0px 50px 50px;
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.41);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
 }
 
 /*** Navbar ***/
@@ -100,7 +104,6 @@ body{
 /*** Footer ***/
 .footer{
     background-color: #040405 !important;
-    border-radius: 40px 40px 0px 0px;
     justify-content: space-between !important;
     box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.178);
 }
