@@ -13,85 +13,12 @@
     opacity: 1;
 }
 
-/*** Navbar ***/
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    vertical-align: middle;
-    margin-left: 8px;
-}
-
-.navbar .navbar-nav .nav-link {
-    margin-right: 30px;
-    padding: 40px 0;
-    font-size: 22px;
-    text-transform: uppercase;
-    outline: none;
-}
-
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
-}
-
-.navbar.sticky-top {
-    top: -100px;
-    transition: .5s;
-}
-
-.navbar>a>h1{
-    color: white !important;
-}
-
-.nav-item:hover{
-    color: snow !important;
-}
-
-.nav-item{
-    font-family: 'Poppins' !important;
-}
-
-@media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link,
-    .navbar.shadow-sm .navbar-nav .nav-link {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-
-    .navbar .navbar-nav {
-        margin-top: 8px;
-        border-top: 1px solid var(--light);
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar.shadow-sm .navbar-nav .nav-link {
-        padding: 20px 0;
-    }
-
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
-    }
-}
-
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.534) inset;
-    z-index: 99;
+.Aurora{
+    height: 80vh;
+    padding-left: 20%;
+    padding-right: 10%;
+    padding-top: 100px;
+    background-image: url('../img/index/truck.png');
+    background-repeat: no-repeat;
+    text-align: right;
 }
