@@ -1,0 +1,54 @@
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    filter: opacity(20%);
+}
+.banner h1{
+    position: absolute;
+    font-weight:800;
+    font-size: 5rem;
+    /* top: 650px; */
+    bottom:50px;
+    left: 50px;
+}
+
+.grid-contato1{
+    margin: 0 auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 45fr 8fr 55fr;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 450px;
+    justify-items: center;
+}
+
+.grid-contato1 hr{
+    width: 2px;
+    height: 300px;
+    color: rgb(255, 255, 255);
+}
+
+.grid-contato1 .element-assist-virtual{
+    padding: 75px;
+    padding-top: 125px;
+    height: 100px;
+}
+
+.grid-contato1 .element-email{
+    padding: 20px;
+    height: 100px;
+}
+
+.grid-contato2{
+    margin: 0 auto;
+    justify-items: center;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 33fr 33fr 33fr;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 200px;   
+}
