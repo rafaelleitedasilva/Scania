@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+
+main{
+    text-align: center;
+    padding: 20px;
+}
+
+main h1{
+    font-family: 'Comfortaa';
+}
