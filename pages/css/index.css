@@ -150,9 +150,8 @@ h3.textoProduto{
 
 .testimonial {
     position: relative;
-    padding: 150px 0;
+    padding: 70px 0;
     text-align: center;
-    background-color: rgba(15, 15, 15, 0.863);
 }
 
 .testimonial .container {
@@ -207,7 +206,6 @@ h3.textoProduto{
     height: 50px;
     top: 0;
     left: calc(50% - 30px);
-    background: url(../img/quote.png) top center no-repeat;
 }
 
 .testimonial .testimonial-slider h3 {

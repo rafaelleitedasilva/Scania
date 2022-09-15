@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
 
 :root{
     --dark-blue:#0E45A1; 
@@ -41,10 +42,6 @@ body{
     display: none;
 }
 
-.brand{
-    color: var(--dark-blue);
-}
-
 .navbar{
     background-color: #040405 !important;
     border-radius: 0px 0px 50px 50px;
@@ -75,6 +72,9 @@ body{
     display: inline-block;
     vertical-align: middle;
     text-transform: uppercase;
+    color: var(--dark-blue);
+    font-family: 'Archivo' !important;
+    font-weight: bolder;
 }
 
 .nav-item:hover{
@@ -99,7 +99,6 @@ body{
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.534) inset;
     z-index: 99;
 }
-
 
 /*** Footer ***/
 .footer{
@@ -177,6 +176,10 @@ a{
     display: flex;
     font-size: 1.2em !important;
     color: var(--silver);
+}
+
+.font-12{
+    font-size: 14px !important;
 }
 
 
