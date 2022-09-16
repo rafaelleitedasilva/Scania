@@ -1,3 +1,3 @@
 # SCANIA
 Para visitar o site, clique:
->https://rafaelleitedasilva.github.io/somativaJS/pages/index.html
+>https://rafaelleitedasilva.github.io/Scania/pages/index.html
