@@ -72,9 +72,9 @@ body{
     display: inline-block;
     vertical-align: middle;
     text-transform: uppercase;
+    word-spacing: -20px !important;
     color: var(--dark-blue);
-    font-family: 'Archivo' !important;
-    font-weight: bolder;
+    font-family: 'Arial' !important;
 }
 
 .nav-item:hover{
