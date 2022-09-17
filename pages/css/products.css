@@ -31,7 +31,6 @@ body, .container-grid{
     width: 100%;
     height: 100%;
     position: relative;
-
 }
 .portfolio h1, .configurator h1{
     color: var(--silver);
@@ -40,32 +39,22 @@ body, .container-grid{
     grid-row: 2/3;
     grid-column: span 3;
 }
-
 .portfolio h1, h3, h2, .configurator h1{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 15px;
     text-align: center;
 }
-
 /* CARROSSEL */
 .contentSlideShow{
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr; */
     position: relative;
     height: 750px;
-
     margin-top: 10px;
-    
-    border: 5px solid black;
-    
+    border: 5px solid black; 
     overflow: hidden;
 }
-
 .navegation{
     position: absolute;
-    /* distancia do posicionamento da bar nav */
-    bottom: 0px;
+    bottom: 0%;
     left: 72.0%;
     transform: translate(-100%);
     display: flex;
@@ -82,8 +71,7 @@ body, .container-grid{
 }
 .bar:hover{
     background-color: var(--silver);
-   border: 3px solid rgb(0, 0, 0);
-
+    border: 3px solid rgb(0, 0, 0);
 }
 .slides input{
     display: none;
@@ -92,9 +80,7 @@ body, .container-grid{
     display: flex; /*faz ccom q as imagens fiquem lado a lado no div slideshow*/
     width:700%;
     height: 100%;   
-    position: relative;
-
-   
+    position: relative;  
 }
 #slide1{
     background-image: url(https://www.scania.com/content/www/group/en/home/products-and-services/trucks/p-series/_jcr_content/root/responsivegrid/responsivegrid_copy/responsivegrid/heroimage.coreimg.85.1920.jpeg/1585222942699.jpeg);
@@ -103,41 +89,31 @@ body, .container-grid{
 #slide2{
     background-image: url(https://www.scania.com/content/www/group/en/home/products-and-services/trucks/g-series/_jcr_content/root/responsivegrid/responsivegrid_copy/responsivegrid/heroimage.coreimg.85.1920.jpeg/1585223097896.jpeg);
     filter: opacity(25%);
-
 }
 #slide3{
     background-image: url(https://www.scania.com/content/www/group/en/home/products-and-services/trucks/r-series/_jcr_content/root/responsivegrid/responsivegrid_copy/responsivegrid/heroimage.coreimg.85.1920.jpeg/1586960869941.jpeg);
     filter: opacity(25%);
-
 }
-
 #slide4{
     background-image: url(https://www.scania.com/content/www/group/en/home/products-and-services/trucks/s-series/_jcr_content/root/responsivegrid/responsivegrid_copy/responsivegrid/heroimage.coreimg.85.1920.jpeg/1585223411210.jpeg);
     filter: opacity(25%);
-
 }
-
 #slide5{
     background-image: url(https://www.scania.com/content/www/group/en/home/products-and-services/trucks/v8/_jcr_content/root/responsivegrid/responsivegrid_copy/responsivegrid/heroimage.coreimg.85.1920.jpeg/1601046723293.jpeg);
     filter: opacity(25%);
-
 }
-
 #slide6{
     background-image: url(https://www.scania.com/content/www/group/en/home/products-and-services/trucks/xt/_jcr_content/root/responsivegrid/responsivegrid_copy/responsivegrid/heroimage.coreimg.85.1920.jpeg/1585223632526.jpeg);
     filter: opacity(25%);
-
 }
 #slide7{
     background-image: url(https://www.scania.com/content/www/group/en/home/products-and-services/trucks/gas-truck/_jcr_content/root/responsivegrid/responsivegrid/responsivegrid/heroimage.coreimg.85.1920.jpeg/1614153826812.jpeg);
     filter: opacity(25%);
-
 }
 .slide{
     display: flex;
     width: 15%;
     transition: .6s;
-
     min-height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -171,7 +147,6 @@ body, .container-grid{
 #slide7:checked ~ .s1{
     margin-left: -90%;
 }
-
 .desc-line{
     position: absolute;
     left: 31.5%;
@@ -181,6 +156,7 @@ body, .container-grid{
     color: rgb(255, 255, 255);
     font-weight: 800;
 }
+
 .esp-tec{
     position: absolute;
     bottom: 10%;
@@ -193,21 +169,17 @@ body, .container-grid{
     color: #ffffff;
     letter-spacing: 0.2rem;
     font-weight: 800;
-    /* color: rgba(47, 0, 255, 0.945); */
 }
 .title-text{
     text-align: center;
     margin-bottom: 30px;
     text-shadow: 0  0 5px var(--silver);
 }
-
 .configurator{
     height: 100vh;    
-    margin-top: 80px;
-    
+    margin-top: 80px; 
 }
 .configurator-grid{
-   
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80vh;
@@ -227,7 +199,6 @@ body, .container-grid{
 }
  .bus-container{
     height: 100vh;
-
  }
  .bus-container img{
     width: 100%;
@@ -236,15 +207,12 @@ body, .container-grid{
     justify-content: center;
     align-items: center;
  }
-
 .desc-bus{
     display: flex;
     margin: 50px auto;
     text-align: justify;
     width: 700px;
-    /* height: 190px; */
     color: var(--silver);
-    /* line-height: 30px; */
 }
 .bus-container a{
     display: flex;
@@ -253,13 +221,10 @@ body, .container-grid{
     width: 400px;
     color: var(--silver);
     letter-spacing: 1px;
-    text-decoration: 1px underline !important;
-    
+    text-decoration: 1px underline !important;  
 }
-
 .paralax-sol{
     background-image: url(https://www.scania.com/content/www/br/pt/home/products/_jcr_content/root/responsivegrid/responsivegrid/responsivegrid_15710/responsivegrid/responsivegrid/image.coreimg.90.1200.jpeg/1639663118112.jpeg);
-
     min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -267,20 +232,16 @@ body, .container-grid{
     background-size: cover;
     margin-top: 50px;
 }
-
 .solutions{
     width:100%;
-    /* height: 50vh; */
     display: grid;
     margin-top: 20px;
-    height: 100vh;
-    
+    height: 100vh;  
     column-gap: 15px;
     grid-template-columns:1fr 1fr;
     grid-template-rows: 0.002fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-
 }
 .solutions p, .atributes p{
     padding: 20px;
@@ -296,7 +257,6 @@ body, .container-grid{
 }
 .col_one{
     width: 80%;
-   
 }
 .col_two{
     width: 80%;
@@ -312,12 +272,7 @@ body, .container-grid{
     display: grid;
     grid-template-columns: 420px 420px 420px;
     grid-template-rows: auto;
-    /* row-gap: 3%; */
-    
-    /* margin: 50px; */
     margin-top: 7%;
-    /* justify-items: center; */
-
 }
 .atributes img{
     width: 100%;
