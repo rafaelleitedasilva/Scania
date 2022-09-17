@@ -66,7 +66,7 @@ body, .container-grid{
     position: absolute;
     /* distancia do posicionamento da bar nav */
     bottom: 0px;
-    left: 76.9%;
+    left: 72.0%;
     transform: translate(-100%);
     display: flex;
 }
@@ -174,7 +174,7 @@ body, .container-grid{
 
 .desc-line{
     position: absolute;
-    left: 40%;
+    left: 31.5%;
     width: 450px;
     bottom: 23.5%;
     text-align: justify;
@@ -184,7 +184,7 @@ body, .container-grid{
 .esp-tec{
     position: absolute;
     bottom: 10%;
-    left: 43%;
+    left: 37%;
     border: 2px solid rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
@@ -274,14 +274,11 @@ body, .container-grid{
     /* height: 50vh; */
     display: grid;
     margin-top: 20px;
-    /* margin-left:30px; */
-    /* margin-right: 30px; */
-    /* height: 100vh; */
     height: 100vh;
     
     column-gap: 15px;
     grid-template-columns:1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-rows: 0.002fr 1fr 1fr;
     justify-items: center;
     align-items: center;
 
@@ -311,16 +308,21 @@ body, .container-grid{
     height: 30vh;
 }
 .atributes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
     width: 100%;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    grid-template-rows: auto;
+    /* row-gap: 3%; */
+    
     /* margin: 50px; */
-    margin-top: 200px;
-
+    margin-top: 7%;
     /* justify-items: center; */
 
+}
+.atributes img{
+    width: 100%;
+    height: 20%;
 }
 .atributes h1{
     grid-column: span 3;
