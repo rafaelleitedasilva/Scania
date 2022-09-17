@@ -49,6 +49,9 @@ body, .container-grid{
 
 /* CARROSSEL */
 .contentSlideShow{
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
     position: relative;
     height: 750px;
 
@@ -63,7 +66,7 @@ body, .container-grid{
     position: absolute;
     /* distancia do posicionamento da bar nav */
     bottom: 0px;
-    left: 1255px;
+    left: 76.9%;
     transform: translate(-100%);
     display: flex;
 }
