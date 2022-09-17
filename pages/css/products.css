@@ -200,9 +200,7 @@ body, .container-grid{
     margin-bottom: 30px;
     text-shadow: 0  0 5px var(--silver);
 }
-/* .configurator .title-text h3{
-    margin-bottom: 330px;
-} */
+
 .configurator{
     height: 100vh;    
     margin-top: 80px;
@@ -228,10 +226,11 @@ body, .container-grid{
     line-height: 180%;
 }
  .bus-container{
-    max-height: 100vh;
+    height: 100vh;
+
  }
  .bus-container img{
-    width: 610px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -326,4 +325,11 @@ body, .container-grid{
 }
 .atributes h1{
     grid-column: span 3;
+}
+.atributes .seven{
+    grid-column: span 3;
+}
+.atributes .seven img{
+    width: 100%;
+    height: 100%;
 }
