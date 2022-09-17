@@ -218,6 +218,12 @@ body, .container-grid{
 .config-banner button{
     background-color: transparent;
 }
+.config-text{
+    padding: 50px;
+}
+.config-text h3{
+    line-height: 180%;
+}
  .bus-container{
     max-height: 100vh;
  }
@@ -245,6 +251,7 @@ body, .container-grid{
     width: 400px;
     color: var(--silver);
     letter-spacing: 1px;
+    text-decoration: 1px underline !important;
     
 }
 
