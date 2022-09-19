@@ -55,7 +55,7 @@ body, .container-grid{
 .navegation{
     position: absolute;
     bottom: 0%;
-    left: 72.0%;
+    left: 66.0%;
     transform: translate(-100%);
     display: flex;
 }
@@ -149,7 +149,7 @@ body, .container-grid{
 }
 .desc-line{
     position: absolute;
-    left: 31.5%;
+    left: 36.5%;
     width: 450px;
     bottom: 23.5%;
     text-align: justify;
@@ -160,7 +160,7 @@ body, .container-grid{
 .esp-tec{
     position: absolute;
     bottom: 10%;
-    left: 37%;
+    left: 42.3%;
     border: 2px solid rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
@@ -201,7 +201,7 @@ body, .container-grid{
     height: 100vh;
  }
  .bus-container img{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
