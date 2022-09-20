@@ -203,6 +203,10 @@ a{
     font-size: 2vw;
 }
 
+.footer span{
+    margin-left: 10px;
+}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link,
     .navbar.shadow-sm .navbar-nav .nav-link {

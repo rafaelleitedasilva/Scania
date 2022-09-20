@@ -4,52 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orçamento</title>
+    <title>SCANIA</title>
+
      <!-- Favicon -->
      <link href="img/icon/scania.png" rel="icon">
  
      <!-- Icon Font Stylesheet -->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
  
-     <!-- Customized Bootstrap Stylesheet -->
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-     <!-- CSS only -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
- 
-    <link href="css/global.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/challenge.css">
+     <!-- Template Stylesheet -->
+     <link href="css/challenge.css" rel="stylesheet">
+     <link href="css/global.css" rel="stylesheet">
+     <link href="css/index.css" rel="stylesheet">
+ </head>
 </head>
 <body>
-    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <!-- Spinner Start -->
+    <!-- <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="text-light loading-image" style="width: 100%; height: 100%;" role="status">
             <h1 class="loading-h1">AGUARDE...</h1>
             <p class="loading-p">TRABALHAMOS COM CAMINHÕES NÃO COM SITES!</p>
         </div>
-    </div>
-    
+    </div> -->
+    <!-- Spinner End -->
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg  navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
             <img src="img/icon/scania1.png" alt="Icone Scania" width="100px">
-            <h1 class="brand">Scania</h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <div class="navbar-nav ml-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="products.html" class="nav-item nav-link">Produtos</a>
                 <a href="about.html" class="nav-item nav-link">Sobre Nós</a>
                 <a href="contact.html" class="nav-item nav-link">Contato</a>
+                <a href="challenge.html"class="nav-item nav-link active">Orçamento</a>
             </div>
-            <a href="challenge.html" class="btn btn-danger rounded-0 py-2 px-lg-4 d-none d-lg-block">Orçamento</a>
         </div>
     </nav>
     <!-- Navbar End -->
     <main>
-        <h1>Orçamento</h1>
+        <form class="formulario" method="post" action="enviaEmail.php">
+
+            <h1 class="title"><i class="icon icon-mail-1"></i> Orçamento</h1>
+             
+             <label class="label" style="display: inline-block;">
+                 <span>Modelo</span>
+                 <select name="" id="">
+                    <option value="R-456">R-456</option>
+                 </select>
+             </label>
+             
+             <label class="label" style="display: inline-block;">
+                 <span>Pagamento</span>
+                 <select name="" id="">
+                    <option value="R-456">Cartão de Crédito</option>
+                    <option value="R-456">Financiamento</option>
+                 </select>
+             </label>
+
+             <label class="label" style="display: inline-block;">
+                <span>Entrada</span>
+                <input type="number">
+            </label>
+    
+             
+             <label class="label" style="display: inline-block;">
+                 <span>Prestações</span>
+                 <input type="range" name="Avaliação" min="6" max="60" step="6" value="1" id="range" oninput="output.innerHTML=Number(range.value)">
+                 <output id="output">1</output><img src="Imagens/estrela.png" width="20px" style="margin-bottom: 5px;" alt="">
+             </label>
+     
+             <label class="naoexibir">
+                 <span>Não preencher:</span><br>
+                 <input type="text" name="url" value=""></p>
+             </label> 
+             
+             <label class="label">
+                 <span>Mensagem</span>
+                 <textarea name="mensagem" class="campo" placeholder="Deixe sua mensagem" required=""></textarea>
+             </label>
+             
+             <label class="label"> 
+                 
+                 <input type="hidden" name="acao" value="enviar"> 
+                 <button type="submit" class="botao"> Enviar </button>
+             
+             </label>
+     
+         </form>
     </main>
 
     <!-- Back to Top -->
