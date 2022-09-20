@@ -182,6 +182,26 @@ a{
     font-size: 14px !important;
 }
 
+.loading-image{
+    background-image: url('../img/loading/1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.loading-h1{
+    font-family: 'Archivo' !important;
+    font-size: 10vw;
+    margin-top: 50vh;
+    margin-left: 10%;
+    color: white;
+    vertical-align: middle;
+}
+
+.loading-p{
+    font-family: 'Archivo' !important;
+    margin-left: 10%;
+    font-size: 2vw;
+}
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link,
