@@ -7,7 +7,7 @@ body, .container-grid{
 .banner img{
     width: 100%;
     height: 90vh;
-    filter: opacity(20%);
+    filter: opacity(50%);
 }
 .banner h1{
     position: absolute;
@@ -237,7 +237,7 @@ body, .container-grid{
     width:100%;
     display: grid;
     margin-top: 20px;
-    height: 100vh;  
+    /* height: 100vh;   */
     column-gap: 15px;
     grid-template-columns:1fr 1fr;
     grid-template-rows: 0.002fr 1fr 1fr;
@@ -269,36 +269,57 @@ body, .container-grid{
 }
 .atributes{
     width: 100%;
-    height: 100vh;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 90px 600px 600px 600px 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 90px 500px 500px 500px ;
     margin-top: 14%;
+    padding: 1%;
+    column-gap: 2%;
+    justify-items: center;
+    align-items: center;
 }
 .atributes img{
-    /* border: 10px solid white;
-    border-radius: 0px; */
     width: 100%;
-    height: 35%;
+    /* height: 55%; */
 }
 .atributes h1{
     grid-column: span 3;
 }
+.atributes .six img, .five img{
+    height: 187.5px;
+}
 .atributes .seven{
-    grid-column: span 3;
+    grid-column: 2/3;
+    align-self: center;
 }
 .atributes .seven img{
     height: 100% !important;
 }
-.first{
-
-    /* grid-column: 1/4; */
-    /* padding: 40%; */
+/* $slide */
+@media(max-width:992px){
+    .banner img{
+       height: 50vh;
+    }
+    .navegation{
+        bottom: 1%;
+        /* left: 80%; */
+        
+    }
+    .desc-line{
+        left: 34%;
+    }
+    .esp-tec{
+        left: 38%;
+    }
+    .atributes div{
+        grid-column: span 3;
+        padding: 30px;
+    }
+    .atributes .seven{
+        grid-column: span 3;
+        
+    }
+    .atributes .five img, .atributes  .six img{
+        height: 400px;
+    }
 }
-/* .first img{
-    height: 45%;
-} */
-/* .atributes .seven img{
-    width: 100%;
-    height: 100%;
-} */
