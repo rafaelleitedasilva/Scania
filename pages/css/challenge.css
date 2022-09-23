@@ -12,7 +12,7 @@ main h1{
 
 .formulario { 
     text-align: justify;
-    width: 80%;
+    width: 50%;
     overflow: hidden ; 
     margin: 10px auto;
     background: #fff; 
@@ -33,7 +33,7 @@ main h1{
   .formulario1 { 
     display: none;
     text-align: justify;
-    width: 80%;
+    width: 50%;
     overflow: hidden ; 
     margin: 10px auto;
     background: #fff; 
@@ -54,7 +54,7 @@ main h1{
   .formulario2 { 
     display: none;
     text-align: justify;
-    width: 80%;
+    width: 50%;
     overflow: hidden ; 
     margin: 10px auto;
     background: #fff; 
@@ -154,11 +154,35 @@ label{
 .btn.btn-secondary{
   border-radius: 50%;
   width: 45px;
+  margin:10px;
+}
+
+.btn.btn-secondary.fim{
+  border-radius: 1%;
+  width:200px;
+  margin:10px;
 }
 
 .setas{
   display: flex;
-  justify-content: space-between;
-  margin: auto;
+  justify-content:space-between;
   width: 100% !important;
+}
+
+body{
+  background-image:url('../img/challenge/estrela.jpg') ;
+  background-size: cover;
+}
+
+
+select{
+  height: 50px;
+  width: 200px;
+  margin-bottom: 0px;
+}
+
+.btn.btn-secondary{
+  background-color: rgb(66, 66, 138);
+  outline: 0px;
+  border: 0px;
 }

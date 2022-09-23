@@ -56,8 +56,8 @@
         </div>
     </nav>
     <!-- Navbar End -->
-    <main  style="background-image: url('https://i.pinimg.com/736x/d2/0a/72/d20a726673f8d4cf81ea09926dba53c9.jpg');">
-        <h1 class="h1_desafio">Dados Pessoais</h1>
+    <main>
+        <h1 class="h1_desafio" id="h1">Dados Pessoais</h1>
         <div class="formulario" id="form">
             <div class="inicial">
                 <h1>Cadastro</h1>
@@ -75,39 +75,85 @@
              <label for="tel">Telefone</label>
              <input type="tel" id="tel">
             
-             <button class="btn btn-secondary" ondblclick="orcamento()"> > </button>
+             <button class="btn btn-secondary" onclick="orcamento()" style="margin-left: auto;"> > </button>
         </div>
 
-         <div class="formulario1" id="form1">
+         <div class="formulario1" id="form1">  
             <div class="inicial">
-                <h1>Cadastro</h1>
-                <p>2/3</p>
+                <p style="margin-left: auto;">2/3</p>
             </div>
-             <label class="label" for="Nome">Nome</label>
-             <input type="text" id="Nome">
+            <div>
+            <label class="label" for="modelo">Modelos</label>
+                 <select name="nmodelo" id="modelo">
+                    <option value="">Linha P</option>
+                    <option value="">Linha G</option>
+                    <option value="">Linha R</option>
+                    <option value="">Linha S</option>
+                    <option value="">Linha V8</option>
+                    <option value="">Linha XT</option>
+                    <option value="">Linha a Gás</option>
+                 </select>
 
-             <label for="CPF">CPF</label>
-             <input type="text" id="CPF">
+                 <label class="label" for="modelo">País</label>
+                 <select name="nmodelo" id="modelo">
+                    <option value="">Brasil</option>
+                    <option value="">Suécia</option>
+                    <option value="">Alemanha</option>
+                    <option value="">França</option>
+                    <option value="">Inglaterra</option>
+                    <option value="">Estados Unidos</option>
+                    <option value="">Espanha</option>
+                 </select>
+             </div>
 
-             <label for="email">Email</label>
-             <input type="email" id="email">
+             <label class="label" for="Nome">Taxa</label>
+             <div class="preco">
+                 <input type="number" id="Nome">
+                 <p>%</p>
+             </div>
 
-             <label for="tel">Telefone</label>
-             <input type="tel" id="tel">
+             <label class="label" for="Nome">Frete</label>
+             <div class="preco">
+                 <p>R$</p>
+                 <input type="number" id="Nome">
+             </div>
+
+             <label class="label" for="Nome">Entrada</label>
+             <div class="preco">
+                 <p>R$</p>
+                 <input type="number" id="Nome">
+             </div>
+
+             <label class="label" for="Nome">Valor</label>
+             <div class="preco">
+                 <p>R$</p>
+                 <input type="number" id="Nome">
+             </div>
+
             
             <div class="setas">
-                <button class="btn btn-secondary" onclick="orcamento()"> &lt; </button>
-                <button class="btn btn-secondary" onclick=""> > </button>
+                <button class="btn btn-secondary" onclick="dados()"> &lt; </button>
+                <button class="btn btn-secondary" onclick="forma()"> > </button>
             </div>
         </div>
 
-         <div class="formulario2">
+         <div class="formulario2" id="form2">
             <div class="inicial">
-                <h1>Cadastro</h1>
-                <p>1/3</p>
+                <p>3/3</p>
             </div>
-             <label class="label" for="Nome">Nome</label>
-             <input type="text" id="Nome">
+            <div>
+                <label class="label" for="modelo">Modelos</label>
+                     <label class="label" for="modelo">País</label>
+                     <select name="nmodelo" id="modelo">
+                        <option value="">Brasil</option>
+                        <option value="">Suécia</option>
+                        <option value="">Alemanha</option>
+                        <option value="">França</option>
+                        <option value="">Inglaterra</option>
+                        <option value="">Estados Unidos</option>
+                        <option value="">Espanha</option>
+                     </select>
+                 </div>
 
              <label for="CPF">CPF</label>
              <input type="text" id="CPF">
@@ -117,8 +163,10 @@
 
              <label for="tel">Telefone</label>
              <input type="tel" id="tel">
-
-             <button class="btn btn-secondary" onclick=""> > </button>
+             <div class="setas">
+                <button class="btn btn-secondary" onclick="orcamento()"> &lt; </button>
+                <button class="btn btn-secondary fim" onclick="encerrar()"> CADASTRAR </button>
+             </div>
         </div>
     </main>
 
@@ -138,11 +186,28 @@
     <script>
         let form = document.getElementById('form')
         let form1 = document.getElementById('form1')
+        let form2 = document.getElementById('form2')
+        let h1 = document.getElementById('h1')
+
+        function dados(){
+            form.style = "display:block;"
+            form1.style = "display:none;"
+            h1.innerHTML = "Dados Pessoais"
+        }
 
         function orcamento(){
             form.style = "display:none;"
             form1.style = "display:block;"
+            form2.style = "display:none;"
+            h1.innerHTML = "Orçamento"
         }
+
+        function forma(){
+            form.style = "display:none;"
+            form1.style = "display:none;"
+            form2.style = "display:block;"
+            h1.innerHTML = "Forma de Pagamento"
+        }    
     </script>
 </body>
 </html>
