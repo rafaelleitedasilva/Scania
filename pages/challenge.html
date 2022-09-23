@@ -56,56 +56,70 @@
         </div>
     </nav>
     <!-- Navbar End -->
-    <main>
-        <form class="formulario" method="post" action="enviaEmail.php">
+    <main  style="background-image: url('https://i.pinimg.com/736x/d2/0a/72/d20a726673f8d4cf81ea09926dba53c9.jpg');">
+        <h1 class="h1_desafio">Dados Pessoais</h1>
+        <div class="formulario" id="form">
+            <div class="inicial">
+                <h1>Cadastro</h1>
+                <p>1/3</p>
+            </div>
+             <label class="label" for="Nome">Nome</label>
+             <input type="text" id="Nome">
 
-            <h1 class="title"><i class="icon icon-mail-1"></i> Orçamento</h1>
-             
-             <label class="label" style="display: inline-block;">
-                 <span>Modelo</span>
-                 <select name="" id="">
-                    <option value="R-456">R-456</option>
-                 </select>
-             </label>
-             
-             <label class="label" style="display: inline-block;">
-                 <span>Pagamento</span>
-                 <select name="" id="">
-                    <option value="R-456">Cartão de Crédito</option>
-                    <option value="R-456">Financiamento</option>
-                 </select>
-             </label>
+             <label for="CPF">CPF</label>
+             <input type="text" id="CPF">
 
-             <label class="label" style="display: inline-block;">
-                <span>Entrada</span>
-                <input type="number">
-            </label>
-    
-             
-             <label class="label" style="display: inline-block;">
-                 <span>Prestações</span>
-                 <input type="range" name="Avaliação" min="6" max="60" step="6" value="1" id="range" oninput="output.innerHTML=Number(range.value)">
-                 <output id="output">1</output><img src="Imagens/estrela.png" width="20px" style="margin-bottom: 5px;" alt="">
-             </label>
-     
-             <label class="naoexibir">
-                 <span>Não preencher:</span><br>
-                 <input type="text" name="url" value=""></p>
-             </label> 
-             
-             <label class="label">
-                 <span>Mensagem</span>
-                 <textarea name="mensagem" class="campo" placeholder="Deixe sua mensagem" required=""></textarea>
-             </label>
-             
-             <label class="label"> 
-                 
-                 <input type="hidden" name="acao" value="enviar"> 
-                 <button type="submit" class="botao"> Enviar </button>
-             
-             </label>
-     
-         </form>
+             <label for="email">Email</label>
+             <input type="email" id="email">
+
+             <label for="tel">Telefone</label>
+             <input type="tel" id="tel">
+            
+             <button class="btn btn-secondary" ondblclick="orcamento()"> > </button>
+        </div>
+
+         <div class="formulario1" id="form1">
+            <div class="inicial">
+                <h1>Cadastro</h1>
+                <p>2/3</p>
+            </div>
+             <label class="label" for="Nome">Nome</label>
+             <input type="text" id="Nome">
+
+             <label for="CPF">CPF</label>
+             <input type="text" id="CPF">
+
+             <label for="email">Email</label>
+             <input type="email" id="email">
+
+             <label for="tel">Telefone</label>
+             <input type="tel" id="tel">
+            
+            <div class="setas">
+                <button class="btn btn-secondary" onclick="orcamento()"> &lt; </button>
+                <button class="btn btn-secondary" onclick=""> > </button>
+            </div>
+        </div>
+
+         <div class="formulario2">
+            <div class="inicial">
+                <h1>Cadastro</h1>
+                <p>1/3</p>
+            </div>
+             <label class="label" for="Nome">Nome</label>
+             <input type="text" id="Nome">
+
+             <label for="CPF">CPF</label>
+             <input type="text" id="CPF">
+
+             <label for="email">Email</label>
+             <input type="email" id="email">
+
+             <label for="tel">Telefone</label>
+             <input type="tel" id="tel">
+
+             <button class="btn btn-secondary" onclick=""> > </button>
+        </div>
     </main>
 
     <!-- Back to Top -->
@@ -121,5 +135,14 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        let form = document.getElementById('form')
+        let form1 = document.getElementById('form1')
+
+        function orcamento(){
+            form.style = "display:none;"
+            form1.style = "display:block;"
+        }
+    </script>
 </body>
 </html>
