@@ -204,7 +204,7 @@ body, .container-grid{
     line-height: 180%;
 }
  .bus-container{
-    height: 100vh;
+    /* height: 100vh; */
  }
  .bus-container img{
     width: 80%;
@@ -241,7 +241,7 @@ body, .container-grid{
 .solutions{
     width:100%;
     display: grid;
-    margin-top: 20px;
+    margin-top: 5%;
     /* height: 100vh;   */
     column-gap: 15px;
     grid-template-columns:1fr 1fr;
@@ -280,15 +280,18 @@ body, .container-grid{
     margin-top: 14%;
     padding: 1%;
     column-gap: 2%;
-    justify-items: center;
-    align-items: center;
+    
+    text-align: justify;
 }
 .atributes img{
     width: 100%;
     /* height: 55%; */
 }
 .atributes h1{
+    justify-items: center;
+    align-items: center;    
     grid-column: span 3;
+    
 }
 .atributes .six img, .five img{
     height: 187.5px;
@@ -303,7 +306,8 @@ body, .container-grid{
 /* $slide */
 @media(max-width:992px){
     .banner img{
-       height: 50vh;
+       height: 100vh;
+       /* height: 50vh; */
     }
     .navegation{
         bottom: 1%;
