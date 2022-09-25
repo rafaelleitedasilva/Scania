@@ -6,6 +6,7 @@ let texto3 = document.getElementById('texto3')
 let aside = document.getElementById('aside')
 let entrada = document.getElementById('entrada')
 let valor = document.getElementById('valor')
+
 let moeda = `R$`
 let imposto
 
@@ -17,76 +18,33 @@ function formatReal( int ){
         }
         return tmp;
 }
-
 function formatExit(int){
     int = int.replace(',','')
     int = int.replace('.','')
     return int
 }
-
 function retira00(int){
     int = int.replace(',00','')
     int = int.replace('.','')
     return int
 }
-
 function formataEntrada(){
-    entrada.value = formatReal(formatExit(entrada.value))
+    entrada.value = parseFloat(formatExit(retira00(entrada.value))).toLocaleString('pt-br', {minimumFractionDigits: 2})
 }
-
 function formataValor(){
-    valor.value = formatReal(formatExit(valor.value))
+    valor.value = parseFloat(formatExit(retira00(valor.value))).toLocaleString('pt-br', {minimumFractionDigits: 2})
 }
+function formataCPF(){
+    let CPF = document.getElementById('CPF')
+    CPF.value = CPF.value.replace(/[^\d]/g, "");
+    CPF.value = CPF.value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+ }
 
-switch (String(pais.value)) {
-  case 'Brasil':
-    moeda = 'R$'
-    imposto = 0.25
-    break;
-  case 'Alemanha':
-    moeda = '€'
-    imposto = 0.21
-    break;  
-  case 'Inglaterra':
-    moeda = "£"
-    imposto = 0.351
-    break;  
-  case 'EUA':
-    moeda = "$"
-    imposto = 0.05
-    break;    
-  case 'Suécia':
-    moeda = "kr"
-    imposto = 0.02
-    break;
+ function formatatelefone(){
+  let tel = document.getElementById('tel')
+    tel.value = tel.value.replace(/[^\d]/g, "");
+    tel.value = tel.value.replace(/(\d{2})(\d{5})(\d{4})/, "$1 $2-$3");
 }
-
-/* switch (String(linha.value)) {
-    case 'P':
-      moeda = 'R$'
-      imposto = 0.25
-      break;
-    case 'R':
-      moeda = '€'
-      imposto = 0.21
-      break;  
-    case 'G':
-      moeda = "£"
-      imposto = 0.351
-      break;  
-    case 'S':
-      moeda = "$"
-      imposto = 0.05
-      break;    
-    case 'XT':
-      moeda = "kr"
-      imposto = 0.02
-      break;
-    case 'V8':
-      moeda = "kr"
-      imposto = 0.02
-      break;
-  } */
 
 function encerrar(){
     switch (String(pais.value)) {
@@ -100,7 +58,7 @@ function encerrar(){
           break;  
         case 'Inglaterra':
           moeda = "£"
-          imposto = 0.351
+          imposto = 0.35
           break;  
         case 'EUA':
           moeda = "$"
