@@ -57,35 +57,13 @@
     </nav>
     <!-- Navbar End -->
     <main>
-        <h1 class="h1_desafio" id="h1">Dados Pessoais</h1>
-
-        <div class="formulario" id="form">
-            <div class="inicial">
-                <h1>Cadastro</h1>
-                <p>1/3</p>
-            </div>
-            <form action="https://rafaelleitedasilva.github.io/Scania/pages/challenge1.html" method="POST">
-                <label class="label" for="Nome">Nome</label>
-                <input type="text" id="Nome" required>
-                
-                <label for="CPF">CPF</label>
-                <input type="text" id="CPF" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" required>
-                
-                <label for="tel">Telefone</label>
-                <input type="tel" id="tel" required>
-                
-                <button class="btn btn-secondary" onclick="orcamento()" style="margin-left: auto;"> > </button>
-            </form>
-        </div>
-                                    
+        <h1 class="h1_desafio" id="h1">Orçamento</h1>
+        
         <div class="formulario1" id="form1">  
             <div class="inicial">
                 <p style="margin-left: auto;">2/3</p>
             </div>
-            <form>
+            <form action="https://rafaelleitedasilva.github.io/Scania/pages/challenge1.html" method="POST">
                 <div>
                     <label class="label" for="modelo">linha</label>
                     <select name="nmodelo" id="modelo">
@@ -106,8 +84,6 @@
                         <option value="EUA">EUA</option>
                     </select>
                 </div>
-                
-                
                 <label class="label" for="entrada">Entrada</label>
                 <div class="preco">
                     <p>R$</p>
@@ -120,59 +96,13 @@
                     <input id="valor" onchange="formataValor()" placeholder="150.000,00">
                 </div>
             
-            
-            
             <div class="setas">
                 <button class="btn btn-secondary" onclick="dados()"> &lt; </button>
-                <button class="btn btn-secondary" onclick="forma()" type="submit"> > </button>
+                <button class="btn btn-secondary" onclick="forma()" type="submit"> FINALIZAR </button>
             </div>
         </form>
-        </div>
-        
-        <div class="formulario2" id="form2">
-            <div class="inicial">
-                <p>3/3</p>
-            </div>
-            <div>
-                <form>
-                    <div style="display: flex; justify-content:space-between;flex-wrap: wrap;">
-                        <label class="label" for="forma">PAGAMENTO</label>
-                        <select name="nforma" id="forma">
-                            <option value="credito">CRÉDITO</option>
-                            <option value="debito">DÉBITO</option>
-                            <option value="financiamento">FINANCIAMENTO</option>
-                        </select>
-                    </div>
-                    
-                    <div style="display: flex; justify-content:space-between;flex-wrap: wrap;">
-                        <label class="label" for="parcela">PARCELAS</label>
-                        <select name="nparcela" id="parcela">
-                            <option value="avista">À VISTA</option>
-                            <option value="6">6</option>
-                            <option value="12">12</option>
-                            <option value="24">24</option>
-                            <option value="32">32</option>
-                        </select>
-                    </div>
-       
-                <div class="setas">
-                    <button class="btn btn-secondary" onclick="orcamento()"> &lt; </button>
-                    <button class="btn btn-secondary fim" onclick="encerrar()"> FINALIZAR </button>
-                </div>
-            </form>
-            </div>
-            
-            
+        </div>        
         </main>
-        <aside id="aside">
-            <div class="inicial2" id="calculo">
-                <h1>ORÇAMENTO...</h1><br>
-                <p id="texto"></p>
-                <p id="texto2"></p>
-                <p id="texto3"></p>
-            </div>
-        </aside>
-        
         
         
         <!-- Back to Top -->
@@ -189,65 +119,5 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
         <script src="js/orcamento.js"></script>
-        <script>
-            let form = document.getElementById('form')
-            let form1 = document.getElementById('form1')
-            let form2 = document.getElementById('form2')
-            let aside = document.getElementById('aside')
-            let h1 = document.getElementById('h1')
-            
-            function dados(){
-                form.style = "display:block;"
-                form1.style = "display:none;"
-                h1.innerHTML = "Dados Pessoais"
-            }
-            
-            function orcamento(){
-                form.style = "display:none;"
-                form1.style = "display:block;"
-                form2.style = "display:none;"
-                aside.style = "display:none;"
-                h1.innerHTML = "Orçamento"
-            }
-            
-            function forma(){
-                let entrada = document.getElementById('entrada')
-                let valor = document.getElementById('valor')
-                let pais = document.getElementById('pais')
-
-                switch (String(pais.value)) {
-                case 'Brasil':
-                    moeda = 'R$'
-                    imposto = 0.25
-                    break;
-                case 'Alemanha':
-                    moeda = '€'
-                    imposto = 0.21
-                    break;  
-                case 'Inglaterra':
-                    moeda = "£"
-                    imposto = 0.351
-                    break;  
-                case 'EUA':
-                    moeda = "$"
-                    imposto = 0.05
-                    break;    
-                case 'Suécia':
-                    moeda = "kr"
-                    imposto = 0.02
-                    break;
-                }
-
-                if(entrada.value>(parseInt(valor.value)*imposto)){
-                    window.alert("Entrada não pode ser maior que o valor de pagamento!")
-                }
-                else{
-                    form.style = "display:none;"
-                    form1.style = "display:none;"
-                    form2.style = "display:block;"
-                    h1.innerHTML = "Forma de Pagamento"
-                }
-            }    
-        </script>
     </body>
     </html>
