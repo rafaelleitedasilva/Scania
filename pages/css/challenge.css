@@ -78,6 +78,10 @@ main h1{
     text-transform: uppercase;
   }
 
+  .inicial2>h1{
+    font-family: 'Montserrat' !important;
+  }
+
   .inicial>h1{
     font-family: 'Montserrat' !important;
   }
@@ -166,7 +170,7 @@ label{
 .setas{
   display: flex;
   justify-content:space-between;
-  width: 100% !important;
+  width: 101.5% !important;
 }
 
 body{
@@ -185,4 +189,47 @@ select{
   background-color: rgb(66, 66, 138);
   outline: 0px;
   border: 0px;
+}
+
+#modelo{
+  width: 70px;
+  font-size: 20px;
+}
+
+#pais{
+  width: 100px;
+}
+
+#calculo{
+  color: black;
+  margin-top: 20px;
+}
+
+#texto{
+  display: block;
+}
+
+aside{
+  display: none;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 100px;
+  width: 50%;
+}
+
+@media (max-width: 1000px){
+  .formulario { 
+    width: 90%;
+  }
+  .formulario1 { 
+    width: 90%;
+  }
+  .formulario2 { 
+    width: 90%;
+  }
+
+  aside{
+    width: 90%;
+  }
 }
