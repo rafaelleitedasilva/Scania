@@ -53,12 +53,15 @@ body, .container-grid{
     border: 5px solid black; 
     overflow: hidden;
 }
+
 .navegation{
-    position: absolute;
+    position: absolute; 
     bottom: 0%;
     left: 66.0%;
     transform: translate(-100%);
     display: flex;
+    /* align-items: center;
+    justify-content: center; */
 }
 .bar{
     width: 70px;
@@ -149,9 +152,9 @@ body, .container-grid{
     margin-left: -90%;
 }
 .desc-line{
-    position: absolute;
-    left: 36.5%;
+    position: absolute; 
     width: 450px;
+    left: 36.5%;
     bottom: 23.5%;
     text-align: justify;
     color: rgb(255, 255, 255);
@@ -191,6 +194,8 @@ body, .container-grid{
 }
 .config-banner button{
     background-color: transparent;
+    border: 0 solid  transparent;
+    
 }
 .config-text{
     padding: 50px;
