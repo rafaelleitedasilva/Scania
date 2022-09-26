@@ -33,14 +33,7 @@
 .video.player:after { display: none; }
 
 .slider-item>h3{
-    color: rgb(100, 84, 247) !important;
-}
-
-.testimonial{
-    background-image: url('../img/index/logo.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+    color: rgb(247, 84, 84) !important;
 }
 
 .primeiroTitulo{
