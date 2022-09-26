@@ -51,18 +51,26 @@
 
 .grid-contato2{
     margin: 0 auto;
-    justify-items: center;
+    /* justify-items: center; */
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    color: white;
+    color: rgb(0, 0, 0);
+}
+.grid-contato2 h3{
+    color: black !important;
 }
 
 .telefones{
-    margin-top: 15%;
-    padding: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     text-align: center;
+    background-color: rgb(255, 255, 255, 0.9);
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.5) inset;
+    width: 90%;
+    /* height: 28vw;
+    width: 28vw; */
 }
 
 #formulario{
@@ -93,10 +101,16 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    font-size: 140%;
+    /* font-size: 140%; */
 }
 
 .form{
     padding-left: 8%;
     padding-right: 8%;
+}
+
+@media (max-width: 1150px){
+    .grid-contato2{
+        display: block;
+    }
 }
