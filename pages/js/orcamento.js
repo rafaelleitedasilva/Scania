@@ -28,17 +28,11 @@ function orcamento(){
 }
 
 function forma(){
-  let entrada = document.getElementById('entrada')
-  let valor = document.getElementById('valor')
-  if(parseFloat(entrada.value)>parseFloat(valor.value)){
-    window.alert("Entrada não pode ser maior que o valor de pagamento!")
-  }
-  else{
-    form.style = "display:none;"
-    form1.style = "display:none;"
-    form2.style = "display:block;"
-    h1.innerHTML = "Forma de Pagamento"
-  }
+  form.style = "display:none;"
+  form1.style = "display:none;"
+  form2.style = "display:block;"
+  h1.innerHTML = "Forma de Pagamento"
+  
 }
 
 function formatReal( int ){
@@ -50,7 +44,6 @@ function formatReal( int ){
   return tmp;
 }
 function formatExit(int){
-  int = int.replace(',','')
   int = int.replace('.','')
   return int
 }
@@ -126,8 +119,11 @@ function encerrar(){
     imposto = 0.02
     break;
   }
+  console.log(valor.value)
+  console.log(formatExit(retira00(valor.value)))
+  console.log(retira00(valor.value))
   
-  let resultado = parseFloat(retira00(valor.value)) + (parseFloat(retira00(valor.value)) * parseFloat(imposto)) - parseFloat(retira00(entrada.value))
+  let resultado = parseFloat(formatExit(retira00(valor.value))) + (parseFloat(formatExit(retira00(valor.value))) * parseFloat(imposto)) - parseFloat(formatExit(retira00(entrada.value)))
   texto.innerHTML = `Você escolheu o caminhão da linha ${linha.value}, pelo(a) ${pais.value} que possui ${imposto*100}% de imposto`
   texto2.innerHTML = `A sua entrada é de ${moeda}${entrada.value} e o valor bruto do caminhão escolhido é de ${moeda}${valor.value}`
   console.log(resultado)
