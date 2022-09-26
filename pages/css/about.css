@@ -25,8 +25,8 @@
 }
 h3{
     font-family:'Montserrat', cursive !important;
-    text-align: center;
-    font-size: 20px;
+    text-align: justify;
+    font-size: 18px;
     padding: 0% 10%;
     color: white;
 }
@@ -137,6 +137,7 @@ h3{
 }
 
 .padrao3{
+    font-family: 'Archivo', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,6 +153,7 @@ h3{
 }
 
 .padrao4{
+    font-family: 'Archivo', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,6 +169,7 @@ h3{
 }
 
 .padrao5{
+    font-family: 'Archivo', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,3 +183,42 @@ h3{
     color: white;
     font-size: 90px ;
 }
+.overlaya {
+    background:rgb(16, 3, 85);
+    opacity:0;
+    display: none;
+    bottom: 0;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: .10s ease;
+  }
+  .img-grid:hover .overlaya {
+    display: block;
+    opacity: 0.2;
+  }
+  .img-grid-3:hover .overlaya {
+    display: block;
+    opacity: 0.2;
+  }
+  .bt{
+    background-image: url("https://www.publicdomainpictures.net/pictures/90000/nahled/silver-gradient.jpg"); 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px;
+    border-color: black
+  }
+
+  .video{
+    text-align: center;
+    background-image: url("https://planetacaminhao.com.br/uploads/blog/97931-wm22020_001.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
