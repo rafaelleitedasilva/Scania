@@ -3,7 +3,7 @@
 }
 .banner img{
     width: 100%;
-    filter: opacity(20%);
+    filter: opacity(60%);  
 }
 .banner h1{
     position: absolute;
@@ -14,32 +14,41 @@
     left: 50px;
 }
 
-.grid-contato1{
+.corpo{
+    padding: 100px;
     margin: 0 auto;
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 45fr 8fr 55fr;
-    grid-template-rows: auto;
+    color: white !important;
+}
+
+.grid-contato1{
     width: 100%;
-    height: 450px;
-    justify-items: center;
+    margin: 0 auto;
+    /* margin-top: 100px; */
+    /* display: grid;
+    grid-template-columns: 50% 10% 40%;
+    grid-template-rows: auto; */
+    /* justify-items: center; */
 }
 
-.grid-contato1 hr{
-    width: 2px;
-    height: 300px;
-    color: rgb(255, 255, 255);
+.element-assist-virtual button{
+    padding: 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    border-radius: 30vw;
+    background-color: var(--white);
+    width: 15vw;
+    text-align: center;
+    /* align-self: center;
+    justify-self: center; */
+
+}
+.element-assist-virtual h1{
+    color: black !important;
+    font-size: 20px;
 }
 
-.grid-contato1 .element-assist-virtual{
-    padding: 75px;
-    padding-top: 125px;
-    height: 100px;
-}
-
-.grid-contato1 .element-email{
-    padding: 20px;
-    height: 100px;
+.element-assist-virtual img{
+    width: 50%;
 }
 
 .grid-contato2{
@@ -47,8 +56,57 @@
     justify-items: center;
     margin-top: 100px;
     display: grid;
-    grid-template-columns: 33fr 33fr 33fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
     width: 100%;
-    height: 200px;   
+    color: white;
+}
+
+.telefones{
+    margin-top: 15%;
+    padding: 5%;
+    text-align: center;
+}
+
+#formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#formulario{
+    display: none;
+}
+
+
+/* .col-lg-6{
+    grid-column: 1/2 !important;
+    grid-row: 1/2 !important;
+    width: 70vw !important;
+    padding: 0 !important;
+} */
+
+.text-light {
+    color: #f8f9fa!important;
+}
+.col-12{
+    width: 100% !important;
+}
+#class-button-enviar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#button-enviar{
+    background-color: white;
+    /* border-radius: 20px; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 140%;
+}
+
+.form{
+    padding-left: 8%;
+    padding-right: 8%;
 }

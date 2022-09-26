@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+.corpo1{
+    font-family: 'Poppins';
+    margin: 0 auto;
+    padding: 220px;
+    padding-top: 2.5%;
+    color: white;
+    text-align: justify;
+    padding-bottom:2vw !important;
+}
+.corpo2{
+    font-family: 'Poppins';
+    margin: 0 auto;
+    padding: 220px;
+    color: white;
+    text-align: justify;
+    padding-top: 0;
+}
+
+     
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    filter: opacity(60%);
+}
+.banner h1{
+    position: absolute;
+    font-weight:800;
+    font-size: 5rem;
+    bottom:50px;
+    left: 50px;
+}
+
+.title-type{
+    margin-top: 70px;
+}
+
+/* Serviços orientados por dados */
+
+.service-type2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.service-type2{
+    margin-top: 1rem;
+    color: black;
+}
+.service-type2 img{
+    grid-column: 1/2;
+    width: 18vw;
+    transform: translateY(8%);
+    transform: translateX(20%);
+    border-radius: 30vw;
+}
+
+#service-type2-middle img{
+    grid-column: 3 !important;
+    grid-row: 2;
+    transform: translateX(-20%);
+}
+.service-type2-text{
+    padding: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(255, 255, 255, 0.9);
+    box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.5) inset;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-left: 12%;
+}
+#service-type2-middle .service-type2-text{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    padding-right: 12%;
+    padding: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.service-type2-text h1{
+    color: black !important;
+    text-align: center;
+    
+}
+
+.services-type2{
+    margin-top: 5%;
+}
+
+
+/* reparo e manutenção */
+.vantagens{
+    display: grid;
+    grid-template-columns: 1fr 0.001fr 1fr;
+}
+.carousel-inner{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#carouselExampleCaptions{
+    /* background-image: url(https://thumbs.dreamstime.com/b/textura-do-asfalto-com-linhas-13996435.jpg);
+    background-size: cover; */
+    background-color: white;
+    box-shadow: 0 0 7.5vw rgba(0, 0, 0, 0.5) inset;
+    color: black;
+    width: 100% !important;
+    padding: 0 !important;
+}
+#carouselExampleCaptions h1{
+    color: black;
+    text-align: left;
+}
+.add-services{
+    grid-column: 3/4;
+    padding-left: 1%;
+}
+.resources{
+    padding-right: 1%;
+}
+
+
+/* Financeiro */
+.services-type3{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.services-type3-text p{
+    text-align: justify;
+}
+.services-type3-text{
+    padding-top: 5%;
+}
+.services-type3 img{
+    width: 100%;
+}
+.services-type3-text h1{
+    color: black !important;
+}
+.service-type3{
+    margin:6%;
+    padding:6%;
+    background-color: white;
+    /* background-color: rgb(255, 255, 255, 0.9); */
+    box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5) inset;
+    color: black;
+}
+
+@media(max-width:1200px){
+    .vantagens{
+        display: block;
+    }
+    .service-type2{
+        display: block;
+    }
+    .service-type2-2{
+        display: block;
+    }
+    .services-type3{
+        display: block;
+    }
+    .corpo1{
+        padding: 5%;
+    }
+    .corpo2{
+        padding: 5%;
+    }
+    .title-type{
+        text-align: left;
+    }
+}
+
