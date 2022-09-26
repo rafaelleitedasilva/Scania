@@ -87,23 +87,23 @@
                     </select>
                     <span style="font-size: 30px; margin: 10px;">|</span>
                     <label class="label" for="pais">País</label>
-                    <select name="npais" id="pais">
-                        <option value="Brasil">Brasil</option>
-                        <option value="Suécia">Suécia</option>
-                        <option value="Alemanha">Alemanha</option>
-                        <option value="Inglaterra">Inglaterra</option>
-                        <option value="EUA">EUA</option>
+                    <select name="npais" id="pais" onclick="moedaf()">
+                        <option value="Brasil" onclick="moedaf()">Brasil</option>
+                        <option value="Suécia" onclick="moedaf()">Suécia</option>
+                        <option value="Alemanha" onclick="moedaf()">Alemanha</option>
+                        <option value="Inglaterra" onclick="moedaf()">Inglaterra</option>
+                        <option value="EUA" onclick="moedaf()">EUA</option>
                     </select>
                 </div>
                 <label class="label" for="entrada">Entrada</label>
                 <div class="preco">
-                    <p>R$</p>
+                    <p class="moeda">R$</p>
                     <input id="entrada" onchange="formataEntrada()" placeholder="10.000,00">
                 </div>
                 
                 <label class="label" for="valor">Valor</label>
                 <div class="preco">
-                    <p>R$</p>
+                    <p class="moeda">R$</p>
                     <input id="valor" onchange="formataValor()" placeholder="150.000,00">
                 </div> 
                 <div class="setas">

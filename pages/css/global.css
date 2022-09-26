@@ -18,7 +18,11 @@ h1{
     font-family: 'Archivo', sans-serif;
 }
 body{
-    background-color: #040405;
+    background-color: #040405f1;
+    animation: fadein 2s; /* Padrão */
+    -webkit-animation: fadein 2s; /* Webkit */
+    -moz-animation: fadein 2s; /* Firefox */
+    -ms-animation: fadein 2s; /* IE */
 }
 
 .back-to-top{
@@ -277,3 +281,4 @@ a{
         opacity: 1;
     }
 }
+​
