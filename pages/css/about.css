@@ -165,7 +165,7 @@ h3{
     bottom: 0;
     margin-top: 0;
     color: white;
-    font-size: 40px ;
+    font-size: 50px ;
 }
 
 .padrao5{
@@ -216,9 +216,14 @@ h3{
 
   .video{
     text-align: center;
-    background-image: url("https://planetacaminhao.com.br/uploads/blog/97931-wm22020_001.jpg");
+  }
+  .parallax {
+    background-image: url("https://www.scania.com/content/dam/www/market/master/home/20092-007.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg");
+    height: 400px;
     background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
  
