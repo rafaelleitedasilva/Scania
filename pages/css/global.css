@@ -33,6 +33,10 @@ body{
     background-color: var(--red) !important;
 }
 
+h1{
+ text-transform:uppercase !important;   
+} 
+
 /* .tituloSobre{
     color: var(--dark-blue) !important;
 } */
