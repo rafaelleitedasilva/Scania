@@ -165,7 +165,7 @@ h3{
     bottom: 0;
     margin-top: 0;
     color: white;
-    font-size: 50px ;
+    font-size: 40px ;
 }
 
 .padrao5{
@@ -216,6 +216,10 @@ h3{
 
   .video{
     text-align: center;
+    background-image: url("https://planetacaminhao.com.br/uploads/blog/97931-wm22020_001.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .parallax {
     background-image: url("https://www.scania.com/content/dam/www/market/master/home/20092-007.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg");
@@ -225,5 +229,28 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .grid-item {
+    font-family: 'Archivo', sans-serif;
+    color: #D8DDE2;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
 
- 
+  }
+  .grid-item1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0PX 100px 0px 100PX !important;
+    font-size: 15px;
+  }
+
+  .f-30{
+    font-size: 18px !important;
+  }
