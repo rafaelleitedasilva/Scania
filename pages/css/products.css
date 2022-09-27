@@ -19,9 +19,9 @@ body, .container-grid{
 }
 .desc{
     display: flex;
-    margin: 150px auto;
+    margin: 100px auto;
     text-align: justify;
-    width: 700px;
+    width: 900px;
     height: 190px;
 }
 .desc p:nth-child(1){
@@ -33,14 +33,15 @@ body, .container-grid{
     height: 100%;
     position: relative;
 }
-.portfolio h1, .configurator h1{
+.portfolio h1, .configurator{
     color: var(--silver);
 }
 .portfolio h3{
     grid-row: 2/3;
     grid-column: span 3;
+    margin-bottom: 20px;
 }
-.portfolio h1, h3, h2, .configurator h1{
+.portfolio , h3, h2, .configurato{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 15px;
     text-align: center;
@@ -177,7 +178,7 @@ body, .container-grid{
 .title-text{
     text-align: center;
     margin-bottom: 30px;
-    text-shadow: 0  0 5px var(--silver);
+   
 }
 .configurator{
     height: 100vh;    
@@ -306,12 +307,12 @@ body, .container-grid{
 
 @media(max-width:992px){ /* menor que 992*/
     .banner img{
-       height: 100vh;
+       height: 60vh;
        /* height: 50vh; */
     }
     .navegation{
         bottom: 1%;
-        /* left: 80%; */
+        left: 80%;
         
     }
     .desc-line{
@@ -335,15 +336,17 @@ body, .container-grid{
 
 @media(max-width:720px){ /* menor que 72*/
     .banner img{
-        height: 80vh;
+        height: 50vh;
         /* height: 50vh; */
      }
-     .desc{
-        padding: 50px;
+     .desc p{
+        padding: 25px;
+        width: 100px;
      }
      .configurator-grid{
         grid-template-columns: 1fr;
         grid-template-rows: 20%;
+        height: 70vh;
      }
      .configurator-grid h3{
         font-size: 0.9rem;

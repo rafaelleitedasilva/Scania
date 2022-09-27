@@ -37,9 +37,7 @@ h1{
  text-transform:uppercase !important;   
 } 
 
-/* .tituloSobre{
-    color: var(--dark-blue) !important;
-} */
+
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
