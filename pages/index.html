@@ -191,8 +191,93 @@
             </div>
         </div>
     </div>
+
+    <div class="conc">
+        <h1>VAMOS FALAR DE NEGÓCIOS</h1>
+        <button class="botao" onclick="abrelocal()"> PROCURE A CONCESSIONÁRIA MAIS PRÓXIMA</button>
+    </div>
+
+    <div class="local" id="local">
+        <iframe class="vh" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d233965.8149565075!2d-46.714066751172155!3d-23.614521243820654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSCANIA!5e0!3m2!1spt-BR!2sbr!4v1664239791284!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="x" onclick="fechalocal()">x</button>
+    </div>
+
+    <script>
+        let local = document.getElementById('local')
+        function abrelocal(){
+            local.style = "display:block;"
+        }
+        function fechalocal(){
+            local.style = 'display:none;'
+        }
+
+        function initAutocomplete() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -33.8688, lng: 151.2195},
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+
+      // Create the search box and link it to the UI element.
+      var input = document.getElementById('pac-input');
+      var searchBox = new google.maps.places.SearchBox(input);
+      map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+      // Bias the SearchBox results towards current map's viewport.
+      map.addListener('bounds_changed', function() {
+        searchBox.setBounds(map.getBounds());
+      });
+
+      var markers = [];
+      // Listen for the event fired when the user selects a prediction and retrieve
+      // more details for that place.
+      searchBox.addListener('places_changed', function() {
+        var places = searchBox.getPlaces();
+
+        if (places.length == 0) {
+          return;
+        }
+
+        // Clear out the old markers.
+        markers.forEach(function(marker) {
+          marker.setMap(null);
+        });
+        markers = [];
+
+        // For each place, get the icon, name and location.
+        var bounds = new google.maps.LatLngBounds();
+        places.forEach(function(place) {
+          var icon = {
+            url: place.icon,
+            size: new google.maps.Size(71, 71),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(17, 34),
+            scaledSize: new google.maps.Size(25, 25)
+          };
+
+          // Create a marker for each place.
+          markers.push(new google.maps.Marker({
+            map: map,
+            icon: icon,
+            title: place.name,
+            position: place.geometry.location
+          }));
+
+          if (place.geometry.viewport) {
+            // Only geocodes have viewport.
+            bounds.union(place.geometry.viewport);
+          } else {
+            bounds.extend(place.geometry.location);
+          }
+        });
+        map.fitBounds(bounds);
+      }
+
+);
+}
+    </script>
     <!-- Avaliações -->
-    <div class="testimonial wow reveal fade-left" data-wow-delay="0.1s">
+    <!-- <div class="testimonial wow reveal fade-left" data-wow-delay="0.1s">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -255,7 +340,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="video" onclick="darplay()" style="margin-bottom: -80px;">
         <img src="img/index/scania.jpg" id="imagemIframe">

@@ -267,6 +267,60 @@ h3.textoProduto{
     animation: fade-bottom 1s ease-in;
   }
 
+.conc{
+    background-image: url('../img/index/neg.jpg');
+    background-size: cover;
+    background-position: center top;
+    margin: auto;
+    text-align: center;
+    padding: 10%;
+}
+
+.local{
+    position: fixed;
+    display: none;
+    background-color: white;
+    z-index: 2000;
+    top: 100px;
+    right: 20px;
+    width: 40vw;
+    height: 40vw;
+    padding: 20px;
+}
+
+.vh{
+    height: 100%;
+    width: 100%;
+}
+
+
+.x{
+    position: absolute;
+    top: 0px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    right: 10px;
+}
+
+.local>label{
+    font-family: 'Montserrat';
+}
+
+.conc h1{
+    color: white;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.647);
+}
+
+.botao{
+    font-family: 'Archivo';
+    background-color: rgb(1, 1, 119);
+    color: white;
+    border: 3px solid white;
+    padding: 20px;
+    font-size: 20px;
+}
+
 @keyframes fade-left {
     0% {
       transform: translateX(-100px);
@@ -342,6 +396,13 @@ h3.textoProduto{
     .servico{
         background-image: url('../img/index/estrada2.png') !important;
         background-size: contain;
+    }
+    .video{
+        margin-bottom: 1px !important;
+    }
+    .local{
+        width: 90vw;
+        height: 60vh;
     }
 }
 
