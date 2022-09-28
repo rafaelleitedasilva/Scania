@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
-
+/*Banner*/
 .banner{
     width: 100vw;
     position: relative;
@@ -17,10 +17,11 @@
     left: 50px;
     color: white;
 }
+/* Texto inicial */
 .t{
     font-family: 'Archivo', sans-serif;
     color: #D8DDE2;
-    font-size: 56px;
+    font-size: 45px;
     text-align: center;
 }
 h3{
@@ -30,13 +31,7 @@ h3{
     padding: 0% 10%;
     color: white;
 }
-#test{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 67% 33%;
-    gap: 15px;
-}
-
+/* grid */
 #grid-about{
     width: 100%;
     margin: auto;
@@ -138,6 +133,7 @@ h3{
 
 .padrao3{
     font-family: 'Archivo', sans-serif;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,79 +144,8 @@ h3{
     transition: .5s ease;
     bottom: 0;
     margin-top: 0;
-    color: white;
-    font-size: 60px ;
+    font-size: 80px ;
 }
-
-.padrao4{
-    font-family: 'Archivo', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    transition: .5s ease;
-    bottom: 0;
-    margin-top: 0;
-    color: white;
-    font-size: 40px ;
-}
-
-.padrao5{
-    font-family: 'Archivo', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    transition: .5s ease;
-    bottom: 0;
-    margin-top: 0;
-    color: white;
-    font-size: 90px ;
-}
-.overlaya {
-    background:rgb(16, 3, 85);
-    opacity:0;
-    display: none;
-    bottom: 0;
-    color: white;
-    font-size: 15px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    transition: .10s ease;
-  }
-  .img-grid:hover .overlaya {
-    display: block;
-    opacity: 0.2;
-  }
-  .img-grid-3:hover .overlaya {
-    display: block;
-    opacity: 0.2;
-  }
-  .bt{
-    background-image: url("https://www.publicdomainpictures.net/pictures/90000/nahled/silver-gradient.jpg"); 
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block; 
-    font-size: 16px;
-    border-color: black
-  }
-
-  .video{
-    text-align: center;
-    background-image: url("https://planetacaminhao.com.br/uploads/blog/97931-wm22020_001.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .parallax {
     background-image: url("https://www.scania.com/content/dam/www/market/master/home/20092-007.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg");
     height: 400px;
@@ -248,27 +173,22 @@ h3{
     font-family: 'Poppins', sans-serif;
     color: white;
     padding: 0PX 100px 0px 100PX !important;
-    font-size: 15px;
   }
 
   .f-30{
     font-size: 16px !important;
   }
-  
-  * {box-sizing:border-box}
-
-
-.slideshow-container {
-  max-width: 1000px;
+/* Designer fundo */
+.Sshow{
+  max-width: 2000px;
   position: relative;
   margin: auto;
 }
 
-
 .mySlides {
   display: none;
 }
-
+/* Seta de ir e voltar */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -284,48 +204,216 @@ h3{
   user-select: none;
 }
 
-
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color:#D8DDE2
 }
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.dot {
+/* Bolinhas de andamento*/
+.bolinha {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #D8DDE2;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.bolin, .bolinha:hover {
+  background-color:black;
+}
+/* responsivo*/
+@media(max-width:1200px){
+  .t{
+    font-family: 'Archivo', sans-serif;
+    color: #D8DDE2;
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+    font-family:'Montserrat', cursive !important;
+    text-align: justify;
+    font-size: 15px;
+    padding: 0% 10%;
+    color: white;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 3s;
+.grid-item {
+    font-family: 'Archivo', sans-serif;
+    color: #D8DDE2;
+    padding: 12px;
+    padding-right: 80px;
+    text-align:left;
+    font-size: 30px;
+  
+    }
+.grid-item1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0px 30px 30px 0px !important;
+    }
+
+.f-30{
+    font-size: 15px !important;
+    }
+
+    .padrao{
+      position: absolute;
+      width: 100%;
+      padding: 10px;
+      transition: .5s ease;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 15px ;
+  }
+  .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      opacity:0;
+      display: none;
+      bottom: 0;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      transition: .10s ease;
+    }
+
+}
+@media(max-width:1200px){
+  .t{
+    font-family: 'Archivo', sans-serif;
+    color: #D8DDE2;
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+    font-family:'Montserrat', cursive !important;
+    text-align: justify;
+    font-size: 15px;
+    padding: 0% 10%;
+    color: white;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.grid-item {
+    font-family: 'Archivo', sans-serif;
+    color: #D8DDE2;
+    padding: 12px;
+    padding-right: 80px;
+    text-align:center;
+    font-size: 30px;
+  
+    }
+.grid-item1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0px 30px 30px 0px !important;
+    }
+
+.f-30{
+    font-size: 15px !important;
+    }
+
+    .padrao{
+      position: absolute;
+      width: 100%;
+      padding: 10px;
+      transition: .5s ease;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 15px ;
+  }
+  .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      opacity:0;
+      display: none;
+      bottom: 0;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      transition: .10s ease;
+    }
+
+}
+@media(max-width:720px){
+  .t{
+    font-family: 'Archivo', sans-serif;
+    color: #D8DDE2;
+    font-size: 24px;
+    text-align: center;
+}
+h3{
+    font-family:'Montserrat', cursive !important;
+    text-align: justify;
+    font-size: 12px;
+    padding: 0% 10%;
+    color: white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+    font-family: 'Archivo', sans-serif;
+    color: #D8DDE2;
+    font-size: 18px;
+  
+    }
+.grid-item1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    }
+
+.f-30{
+    font-size: 12px !important;
+    }
+
+    .padrao{
+      position: absolute;
+      width: 100%;
+      padding: 10px;
+      transition: .5s ease;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 12px ;
+  }
+  .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      opacity:0;
+      display: none;
+      bottom: 0;
+      color: white;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      transition: .10s ease;
+    }
+    .padrao3{
+      font-family: 'Archivo', sans-serif;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      transition: .5s ease;
+      bottom: 0;
+      margin-top: 0;
+      font-size: 50px ;
+    }
 }
