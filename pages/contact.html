@@ -51,14 +51,14 @@
                     <p class="mb-4 pb-2 text-light">Tire dúvidas sobre nosso atendimento, serviços, produtos e muito mais. Se precisar, também temos atendentes apostos para te auxiliar em outras questões.</p>
                     
                         <div class="row g-3">
-                            <div class="col-12 col-sm-1" style="margin:10px 0px">
+                            <div class="col-12 col-sm-3" style="margin:10px 0px">
                                 <select id="documento" class="form-select border-0 services23" style="height: 55px; border-radius: 5px;">
                                     <option value="1">CPF</option>
                                     <option value="2">CNPJ</option>
                                 </select>
                             </div>
-                            <div class="col-12 col-sm-11" style="margin:10px 0px">
-                                <input type="text" id="num" class="form-control border-0" placeholder="000.000.000-00" data-mask="000.000.000-00" style="height: 55px;" onchange="validacao()">
+                            <div class="col-12 col-sm-9" style="margin:10px 0px">
+                                <input type="text" id="num" class="form-control border-0" placeholder="000.000.000-00" style="height: 55px;" onchange="validacao()">
                             </div>
                             <div id="formulario">
                                 <div class="col-12 col-sm-12" style="margin:10px 0px">
@@ -192,5 +192,16 @@
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="js/services.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        var documento = document.getElementById("documento");
+        if(documento.value == '1'){
+            $("#num").mask("000.000.000-00")
+        }
+        else{
+            $("#num").mask("00.000.000/0000-00")
+        }
+    </script>
 </body>
 </html>
