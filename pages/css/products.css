@@ -204,10 +204,10 @@ body, .container-grid{
 .config-text h3{
     line-height: 180%;
 }
- .bus-container{
-    /* height: 100vh; */
- }
+
  .bus-container img{
+    border-radius: 5px;
+
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -260,6 +260,8 @@ body, .container-grid{
     grid-row: 1/2;
 }
 .solutions img{
+    border-radius: 5px;
+
     width: 100%;
 }
 .col_one{
@@ -286,6 +288,7 @@ body, .container-grid{
 }
 .atributes img{
     width: 100%;
+    border-radius: 5px;
     /* height: 55%; */
 }
 .atributes h1{
@@ -336,12 +339,34 @@ body, .container-grid{
 
 @media(max-width:720px){ /* menor que 72*/
     .banner img{
-        height: 50vh;
+        height: 40vh;
         /* height: 50vh; */
      }
-     .desc p{
-        padding: 25px;
-        width: 100px;
+     .banner h1{
+        font-size: 3rem;
+        bottom: 15px;
+     }
+     .desc{
+        display: block;
+        margin: 50px auto;
+        width: 500px;
+        height: auto;
+        text-align: justify;
+     }
+     .bar{
+        width: 50px;
+        height: 15px;
+     }
+     .navegation{
+        left: 85%;
+     }
+     .desc-line{
+        left: 30%;
+        width: 350px;
+        font-size: 1rem 
+     }
+     .esp-tec{
+        left: 33%;
      }
      .configurator-grid{
         grid-template-columns: 1fr;
@@ -349,8 +374,12 @@ body, .container-grid{
         height: 70vh;
      }
      .configurator-grid h3{
-        font-size: 0.9rem;
+        font-size: 1rem;
      }
+     .configurator-grid img{
+        width: 70%;
+     }
+     
      .desc-bus{
         padding: 50px;
      }
@@ -362,8 +391,12 @@ body, .container-grid{
         grid-column: span 3;
      }
      .atributes{
-        margin-top: 30%;
+        grid-template-rows: 90px 400px 400px 400px ;
      }
+     .atributes div>h3{
+        margin-bottom: 20px;
+     }
+     
 }
 @media(max-width:500px){ /* menor que 72*/
     .banner img{
