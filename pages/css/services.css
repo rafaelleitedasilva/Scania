@@ -3,8 +3,8 @@
 .corpo1{
     font-family: 'Poppins';
     margin: 0 auto;
-    padding: 220px;
-    padding-top: 2.5%;
+    padding: 190px;
+    padding-top: 100px;
     color: white;
     text-align: justify;
     padding-bottom:2vw !important;
@@ -12,7 +12,7 @@
 .corpo2{
     font-family: 'Poppins';
     margin: 0 auto;
-    padding: 220px;
+    padding: 190px;
     color: white;
     text-align: justify;
     padding-top: 0;
@@ -99,8 +99,8 @@
     grid-template-columns: 1fr 0.001fr 1fr;
 }
 .carousel-inner{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #carouselExampleCaptions{
@@ -113,7 +113,7 @@
     padding: 0 !important;
 }
 #carouselExampleCaptions h1{
-    color: black;
+    color: var(--dark-blue);
     text-align: left;
 }
 .add-services{
@@ -123,6 +123,19 @@
 .resources{
     padding-right: 1%;
 }
+h3{
+    color: var(--dark-blue);
+    text-align: center;
+    font-family: "Archivo";
+    text-transform:uppercase;
+}
+h4{
+    color: var(--dark-blue);
+    text-align: center;
+    font-family: "Archivo";
+    text-transform:uppercase;
+}
+
 
 
 /* Financeiro */
@@ -144,6 +157,7 @@
     color: black !important;
 }
 .service-type3{
+    position: relative;
     margin:6%;
     padding:6%;
     background-color: white;
@@ -152,7 +166,23 @@
     color: black;
 }
 
+.service-type3:hover{
+   top: -25px;
+   box-shadow: 0 0 2vw rgba(0, 0, 0, 0.5) inset;
+}
+
+
+@media(max-width:1500px){
+    h1{
+        font-size: 2rem;
+    }
+}
+
 @media(max-width:1200px){
+    .banner h1{
+        font-size: 10vw !important;
+    }
+    
     .vantagens{
         display: block;
     }
@@ -164,6 +194,20 @@
     }
     .services-type3{
         display: block;
+    }
+    .services-type2 img{
+        width: 90vw;
+        transform: translateX(0);
+        border-radius: 0;
+    }
+    #service-type2-middle img{
+        transform: translateX(0);
+    }
+    .services-type2{
+        text-align: center;
+    }
+    .services-type2 p{
+        text-align: justify;
     }
     .corpo1{
         padding: 5%;

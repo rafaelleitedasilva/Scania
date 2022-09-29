@@ -66,9 +66,10 @@
 .telefones{
     padding: 10%;
     text-align: center;
-    background-color: rgb(255, 255, 255, 0.9);
-    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.5) inset;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5) inset;
     width: 25vw;
+    border-radius: 30vw;
     /* height: 28vw;
     width: 28vw; */
 }
@@ -107,6 +108,16 @@
 .form{
     padding-left: 8%;
     padding-right: 8%;
+}
+h5{
+    font-family: "Archivo";
+    color: black;
+    text-transform: uppercase;
+}
+.telefones-text{
+    margin: 0 auto;
+    padding: 5%;
+
 }
 
 @media (max-width: 900px) {
