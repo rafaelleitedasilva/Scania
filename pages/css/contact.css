@@ -1,17 +1,18 @@
 .banner{
-    position: relative;
-}
-.banner img{
-    width: 100%;
-    filter: opacity(60%);  
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    width: 100vw;
+    background-image: url("../img/contact/banner.jpeg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 40vw;
 }
 .banner h1{
-    position: absolute;
     font-weight:800;
     font-size: 5rem;
-    /* top: 650px; */
-    bottom:50px;
-    left: 50px;
+    margin: 20px;
+    color: white;
 }
 
 .corpo{
