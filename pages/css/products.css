@@ -5,8 +5,8 @@ body, .container-grid{
     position: relative;
 }
 .banner img{
-    width: 100%;
-    height: 90vh;
+    width: 100vw;
+    height: 40vw;
     filter: opacity(50%);
 }
 .banner h1{
