@@ -47,7 +47,7 @@
                         <h1 class="display-5 mb-4 text-light" style="color:white !important;">Contato</h1>
                     </div>
                     <p class="mb-4 pb-2 text-light" style="color:white !important;">Tire dúvidas sobre nosso atendimento, serviços, produtos e muito mais. Se precisar, também temos atendentes apostos para te auxiliar em outras questões.</p>
-                    
+                    <form class="Curso" action="https://formsubmit.co/rafael.leite.14@hotmail.com" method="POST">
                         <div class="row g-3">
                             <div class="col-12 col-sm-3" style="margin:10px 0px">
                                 <select id="documento" onclick="mascaraInput()" class="form-select border-0 services23" style="height: 55px; border-radius: 5px;">
@@ -88,10 +88,12 @@
                                     <textarea class="form-control border-0" placeholder="Mensagem"></textarea>
                                 </div>
                                 <div class="col-12" id="class-button-enviar">
-                                    <a href="contact.html">
-                                        <button class="btn w-20 py-3" id="button-enviar" type="submit" onclick="(alert('Mensagem enviada com sucesso!'))">Enviar</button>
-                                    </a>
-                            </div>
+                                <button class="btn w-20 py-3" id="button-enviar" type="submit" onclick="(alert('Mensagem enviada com sucesso!'))">Enviar</button>
+                        </div>
+
+                        <input type="hidden" name="_next" value="https://rafaelleitedasilva.github.io/Scania/pages/contact.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
                             </div>
                         </div>
                 </div>
