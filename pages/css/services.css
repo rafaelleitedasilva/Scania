@@ -20,6 +20,9 @@
     padding-top: 0;
 }
 
+.text-center{
+    color: white !important;
+}
      
 .banner{
     display: flex;
