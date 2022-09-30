@@ -47,7 +47,7 @@
         <h1>SERVIÇOS</h1>
     </div>
 
-    <div class="corpo1">
+    <div class="corpo1">  
         <p> Cada Scania que colocamos em serviço na última década conta com tecnologia inteligente, sensores avançados e
             conectividade sem fio. Isto significa que temos centenas de milhares de veículos e motores constantemente
             conectados em uso em todo o mundo. A razão para isto é que não há, francamente, melhor maneira de melhorar
@@ -93,7 +93,7 @@
                     mãos. Da proteção do trem de força à cobertura completa de um para-choque ao outro, incluindo
                     carroceria e equipamento auxiliar, tudo está coberto.
                 </p>
-                <div class="vantagens">
+                <div class="vantagens" id="contratos">
                     <div class="resources">
                         <h3>Principais recursos</h3>
                         <ul>
@@ -126,13 +126,15 @@
                     </div>
 
                 </div>
+                <p id="ver1" class="vermais" onclick="vermais1()"> ver mais </p>
+                <p id="nver1" class="vermenos" onclick="vermenos1()"> ver menos </p>
             </div>
             <div class="carousel-item">
                 <h1> Programa de Manutenção </h1>
                 <p> Conhecemos todos os Scania por dentro e por fora e fazemos a manutenção de milhares de veículos
                     novos e antigos. Por meio de nossos programas de manutenção, você tem uma oficina com uma equipe de
                     serviço com conhecimento de seus veículos, mais acesso à rede global de manutenção da Scania.</p>
-                <div class="vantagens">
+                <div class="vantagens" id="programas">
                     <div class="resources">
                         <h3>Principais recursos</h3>
                         <ul>
@@ -159,13 +161,15 @@
                     </div>
 
                 </div>
+                <p id="ver2" class="vermais" onclick="vermais2()"> ver mais </p>
+                <p id="nver2" class="vermenos" onclick="vermenos2()"> ver menos </p>
             </div>
             <div class="carousel-item">
                 <h1> Fleet Care </h1>
                 <p> O Fleet Care Scania toma conta de toda a frota, independentemente da marca ou idade, e assegura que
                     todo veículo fique em plena forma. Ele permite que sua frota mantenha disponibilidade máximo para
                     que você se concentre na essência de seus negócios.</p>
-                <div class="vantagens">
+                <div class="vantagens" id="fleetcare">
                     <div class="resources">
                         <h3>Principais recursos</h3>
                         <ul>
@@ -190,6 +194,8 @@
                     </div>
 
                 </div>
+                <p id="ver3" class="vermais" onclick="vermais3()"> ver mais </p>
+                <p id="nver3" class="vermenos" onclick="vermenos3()"> ver menos </p>
             </div>
             <div class="carousel-item">
                 <h1> Scania Assistance </h1>
@@ -197,17 +203,21 @@
                     Onde quer que você esteja, a Scania Assistance estará disponível 24/7/365 – basta um telefonema para
                     entrar em contato com um coordenador de serviço que conhece seu Scania e fala seu idioma. Por isso,
                     algo inesperado acontecer, haverá sempre alguém no outro lado da linha para ajudar.</p>
-                <h4> Identifica o Problema </h4>
-                <p> Você saberá como podemos ajudar e aproximadamente quanto tempo levará. Se houver necessidade,
-                    providenciamos o envio de um veículo de serviço, com peças adequadas ao seu veículo e as ferramentas
-                    certas, ao lugar em que você estiver. </p>
-                <h4> Põe em movimento </h4>
-                <p> Nossa equipe agilizará o atendimento preparando orçamentos de oficina e verificações de crédito em
-                    seu nome. Se houver necessidade de outros serviços, providenciaremos para que tudo ocorra na hora
-                    certa e você possa retomar seus negócios. </p>
-                <h4> Organiza </h4>
-                <p> Algumas paradas não planejadas acontecem em lugares improváveis ou exigem maior tempo de resolução.
-                    Ajudamos a providenciar um veículo temporário, bem como acomodações ou conexões de viagem. </p>
+                <div id="scania-assistance" >
+                    <h4> Identifica o Problema </h4>
+                    <p> Você saberá como podemos ajudar e aproximadamente quanto tempo levará. Se houver necessidade,
+                        providenciamos o envio de um veículo de serviço, com peças adequadas ao seu veículo e as ferramentas
+                        certas, ao lugar em que você estiver. </p>
+                    <h4> Põe em movimento </h4>
+                    <p> Nossa equipe agilizará o atendimento preparando orçamentos de oficina e verificações de crédito em
+                        seu nome. Se houver necessidade de outros serviços, providenciaremos para que tudo ocorra na hora
+                        certa e você possa retomar seus negócios. </p>
+                    <h4> Organiza </h4>
+                    <p> Algumas paradas não planejadas acontecem em lugares improváveis ou exigem maior tempo de resolução.
+                        Ajudamos a providenciar um veículo temporário, bem como acomodações ou conexões de viagem. </p>
+                </div>
+                <p id="ver4" class="vermais" onclick="vermais4()"> ver mais </p>
+                <p id="nver4" class="vermenos" onclick="vermenos4()"> ver menos </p>
             </div>
             <div class="carousel-item">
                 <h1> Peças Scania </h1>
@@ -215,7 +225,7 @@
                     especialistas identificarão e organizarão rapidamente os itens necessários. E nossa rede global de
                     logística garante que todas as peças Scania estejam disponíveis para rápida entrega.</p>
 
-                <div class="vantagens">
+                <div class="vantagens" id="pecas">
                     <div class="resources">
                         <h3>Vantagens</h3>
                         <ul>
@@ -237,7 +247,8 @@
                     </div>
 
                 </div>
-
+                <p id="ver5" class="vermais" onclick="vermais5()"> ver mais </p>
+                <p id="nver5" class="vermenos" onclick="vermenos5()"> ver menos </p>
             </div>
             <div class="carousel-item">
                 <h1> Óleo Scania </h1>
@@ -250,22 +261,25 @@
                     que garantem menor consumo de combustível, maior disponibilidade, benefícios ambientais e
                     tranquilidade para você.
                 </p>
-                <h3>Óleos</h3>
-                <ul>
-                    <li>ÓLEO SCANIA E7 15W-40</li>
-                    <p>Válido para motores em linha e V8, porém não é adequado para motores com sistemas de
-                        pós-tratamento.</p>
-                    <li>ÓLEO SCANIA BEO-2</li>
-                    <p>Desenvolvido especialmente para o motor a bioetanol Scania ED95.</p>
-                    <li>ÓLEO SCANIA LDF-3 10W-40</li>
-                    <p>Desenvolvido para fornecer a melhor custo total de operação para motores Scania Euro V
-                        (ou mais antigos), para motores Scania Euro VI com um sistema de
-                        pós-tratamento e válido também para motores em linha e V8.</p>
-                    <li>ÓLEO SCANIA LDF-4</li>
-                    <p>Busca oferecer a melhor custo total de operação para os motores Scania Euro VI, também é válido
-                        para motores a CNG e LNG</p>
-                </ul>
-
+                <div id="oleos">
+                    <h3>Óleos</h3>
+                    <ul>
+                        <li>ÓLEO SCANIA E7 15W-40</li>
+                        <p>Válido para motores em linha e V8, porém não é adequado para motores com sistemas de
+                            pós-tratamento.</p>
+                        <li>ÓLEO SCANIA BEO-2</li>
+                        <p>Desenvolvido especialmente para o motor a bioetanol Scania ED95.</p>
+                        <li>ÓLEO SCANIA LDF-3 10W-40</li>
+                        <p>Desenvolvido para fornecer a melhor custo total de operação para motores Scania Euro V
+                            (ou mais antigos), para motores Scania Euro VI com um sistema de
+                            pós-tratamento e válido também para motores em linha e V8.</p>
+                        <li>ÓLEO SCANIA LDF-4</li>
+                        <p>Busca oferecer a melhor custo total de operação para os motores Scania Euro VI, também é válido
+                            para motores a CNG e LNG</p>
+                    </ul>
+                </div>
+                <p id="ver6" class="vermais" onclick="vermais6()"> ver mais </p>
+                <p id="nver6" class="vermenos" onclick="vermenos6()"> ver menos </p>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
@@ -440,6 +454,7 @@
         <h3 class="bi bi-arrow-up"></h3>
     </a>
 
+    <script src="js/services.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
