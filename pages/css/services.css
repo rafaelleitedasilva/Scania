@@ -28,6 +28,7 @@
     background-repeat: no-repeat;
     background-position: right top;
     height: 40vw;
+    margin-top: 0px !important;
 }
 .banner h1{
     font-weight:800;

@@ -8,14 +8,12 @@
     <link href="img/icon/scania.png" rel="icon"> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap2.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    
     <link href="css/contact.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap2.min.css">
 </head>
 <body>
     <!-- Navbar Start -->
@@ -134,6 +132,26 @@
         </button>
     </div>
 
+    <div class="conc">
+        <h1>VAMOS FALAR DE NEGÓCIOS</h1>
+        <button class="botao" onclick="abrelocal()"> PROCURE A CONCESSIONÁRIA MAIS PRÓXIMA</button>
+    </div>
+
+    <div class="local" id="local">
+        <iframe class="vh" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d233965.8149565075!2d-46.714066751172155!3d-23.614521243820654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSCANIA!5e0!3m2!1spt-BR!2sbr!4v1664239791284!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="x" onclick="fechalocal()">x</button>
+    </div> 
+
+    <script>
+        let local = document.getElementById('local')
+        function abrelocal(){
+            local.style = "display:block;"
+        }
+        function fechalocal(){
+            local.style = 'display:none;'
+        }
+    </script>
+
     <!-- Footer Start -->
     <div class="container-fluid  text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -196,10 +214,7 @@
         </div>
     </div>
     <!-- Footer End -->
-    <a href="#" class="btn btn-primary btn-lg-square back-to-top">
-        <h3 class="bi bi-arrow-up"></h3>
-    </a>
-
+    <a href="#" style="background-color: black;border:none;padding-top:9px;right:23px;" class="btn btn-primary btn-lg-square back-to-top"><h3 class="bi bi-arrow-up"></h3></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

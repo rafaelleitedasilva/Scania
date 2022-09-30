@@ -75,6 +75,15 @@ h3{
     background-size: cover;
 }
 
+.bi.bi-arrow-up{
+  font-size: 20px!important;
+  padding-top: 3px;
+}
+
+.bi.bi-arrow-up::marker{
+  background-color: green;
+}
+
 .sobre{
     width: 100vw;
     padding: 0% 10%;
@@ -147,7 +156,6 @@ h3{
 }
   .parallax {
     background-image: url("https://www.scania.com/content/dam/www/market/master/home/20092-007.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg");
-    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,15 +163,12 @@ h3{
   }
   .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
     padding: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
+    grid-template-columns: 2fr 1fr 1fr;
   }
   .grid-item {
     font-family: 'Archivo', sans-serif;
     color: #D8DDE2;
-    padding: 20px;
     text-align: center;
     font-size: 40px;
 
@@ -243,6 +248,12 @@ h3{
     color: white;
 }
 
+.grid-container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
 .grid-item {
     font-family: 'Archivo', sans-serif;
     color: #D8DDE2;
@@ -297,20 +308,19 @@ h3{
     font-family:'Montserrat', cursive !important;
     text-align: justify;
     font-size: 12px;
-    padding: 0% 10%;
     color: white;
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 20px;
+  padding: 10px;
+  grid-template-columns: 2fr;
 }
 .grid-item {
     font-family: 'Archivo', sans-serif;
     color: #D8DDE2;
     font-size: 18px;
-  
     }
+    
 .grid-item1 {
     font-family: 'Poppins', sans-serif;
     text-align: left;
