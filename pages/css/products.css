@@ -411,6 +411,9 @@ body, .container-grid{
         height: auto;
         text-align: center;
      }
+     .contentSlideShow{
+        height:60vh ;
+     }
      .desc p{
         padding: 5%;
         font-size: 0.8rem;
@@ -429,7 +432,7 @@ body, .container-grid{
     }
     .desc-line{
         left: 20%;
-        width: 50%;
+        width: 60%;
         font-size: 1rem 
      }
     .desc-line p {
