@@ -108,9 +108,15 @@ h1{
 /*** Footer ***/
 .footer{
     background-color: #040405 !important;
+    color: white !important;
     justify-content: space-between !important;
     box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.178);
     padding: 0px !important;
+}
+
+.text-center{
+    justify-content: center !important;
+    text-align: center !important;
 }
 
 .footer .btn.link {

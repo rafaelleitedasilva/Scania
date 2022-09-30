@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+
+*{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 .corpo1{
     font-family: 'Poppins';
     margin: 0 auto;
@@ -11,7 +17,7 @@
 }
 .corpo2{
     font-family: 'Poppins';
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 190px;
     color: white;
     text-align: justify;
@@ -124,13 +130,13 @@
 .resources{
     padding-right: 1%;
 }
-h3{
+.carousel-inner h3{
     color: black;
     text-align: center;
     font-family: "Archivo";
     text-transform:uppercase;
 }
-h4{
+.carousel-inner h4{
     color: black;
     text-align: center;
     font-family: "Archivo";
@@ -261,5 +267,14 @@ h4{
     .title-type{
         text-align: left;
     }
+    .carousel-inner{
+        padding: 0;
+        /* padding-left: 0.5rem;
+        padding-right: 1rem; */
+    }
 }
 
+
+body{
+    overflow-x: hidden;
+}
