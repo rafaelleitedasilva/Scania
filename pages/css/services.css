@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
 
-*{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
 
 .corpo1{
     font-family: 'Poppins';
@@ -199,6 +195,10 @@
 }
 
 @media(max-width:1200px){
+    *{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 
     .vermais{
         color: var(--dark-blue);
