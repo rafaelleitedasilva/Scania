@@ -41,6 +41,11 @@ main h1{
     border-radius: 3px; 
     padding: 4vw; 
   }
+
+  .f10{
+    display: flex;
+    flex-wrap: wrap;
+  }
   
 
   .formulario1 input{
@@ -231,5 +236,13 @@ aside{
 
   aside{
     width: 90%;
+  }
+
+  select{
+    width: 100% !important;
+  }
+
+  span{
+    display: none;
   }
 }

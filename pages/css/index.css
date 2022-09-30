@@ -404,12 +404,16 @@ h3.textoProduto{
         width: 90vw;
         height: 60vh;
     }
+    .f10{
+        font-size: 20px !important;
+    }
 }
 
 @media (min-width: 992px) {
     .container.contact {
         max-width: 100% !important;
     }
+
 
     .contact-text  {
         padding-left: calc(((100% - 960px) / 2) + .75rem);
