@@ -114,10 +114,7 @@ h1{
     padding: 0px !important;
 }
 
-.text-center{
-    justify-content: center !important;
-    text-align: center !important;
-}
+
 
 .footer .btn.link {
     font-family: 'Poppins' !important;
@@ -268,6 +265,7 @@ a{
     .col-lg-4.col-md-6 h4{
         text-align: center;
     }
+    
 }
 
 @media (min-width: 992px) {
@@ -292,4 +290,3 @@ a{
         opacity: 1;
     }
 }
-​
