@@ -244,7 +244,7 @@ body, .container-grid{
     display: grid;
     margin-top: 5%;
     
-    column-gap: 15px;
+    /* column-gap: 15px; */
     grid-template-columns:1fr 1fr;
     grid-template-rows: 0.002fr 1fr 1fr;
     justify-items: center;
@@ -409,7 +409,7 @@ body, .container-grid{
         margin: 50px auto;
         width: 80%;
         height: auto;
-        text-align: center;
+        text-align: justify;
      }
      .contentSlideShow{
         height:60vh ;
@@ -418,7 +418,7 @@ body, .container-grid{
         padding: 5%;
         font-size: 0.8rem;
         text-align: justify;
-        /* width: 80%; */
+       
      }
      .portfolio h3{
         padding: 30px;
@@ -431,15 +431,13 @@ body, .container-grid{
         left: 75%;
     }
     .desc-line{
-        left: 20%;
+        left: 22%;
         width: 60%;
         font-size: 1rem 
      }
-    .desc-line p {
 
-    }
      .esp-tec{
-        left: 20%;
+        left: 23%;
         padding: 5px;
      }
     .configurator h3{
