@@ -113,7 +113,7 @@
     padding: 0 !important;
 }
 #carouselExampleCaptions h1{
-    color: var(--dark-blue);
+    color: black;
     text-align: left;
 }
 .add-services{
@@ -124,17 +124,30 @@
     padding-right: 1%;
 }
 h3{
-    color: var(--dark-blue);
+    color: black;
     text-align: center;
     font-family: "Archivo";
     text-transform:uppercase;
 }
 h4{
-    color: var(--dark-blue);
+    color: black;
     text-align: center;
     font-family: "Archivo";
     text-transform:uppercase;
 }
+.vermais{
+    display: none;
+}
+.vermenos{
+    color: var(--dark-blue);
+    display: none;
+}
+.vermenos:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -179,6 +192,35 @@ h4{
 }
 
 @media(max-width:1200px){
+
+    .vermais{
+        color: var(--dark-blue);
+        display: inline;
+    }
+    .vermais:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    #contratos{
+        display: none;
+    }
+    #programas{
+        display: none;
+    }
+    #fleetcare{
+        display: none;
+    }
+    #scania-assistance{
+        display: none;
+    }
+    #pecas{
+        display: none;
+    }
+    #oleos{
+        display: none;
+    }
+
+
     .banner h1{
         font-size: 10vw !important;
     }

@@ -450,3 +450,9 @@ body, .container-grid{
         height: 150px !important;
     }
 }
+/* betriz que colocou isso aqui */
+@media (max-width:1200px){
+    .banner h1{
+        font-size: 10vw !important;
+    }
+}

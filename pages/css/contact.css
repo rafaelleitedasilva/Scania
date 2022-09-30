@@ -9,6 +9,7 @@
     height: 40vw;
 }
 .banner h1{
+    filter: opacity(100%) !important;
     font-weight:800;
     font-size: 5rem;
     margin: 20px;
@@ -40,8 +41,9 @@
 .element-assist-virtual button{
     border-radius: 50%;
     background-color: var(--white);
-    width: 50px;
-    height: 50px;
+    border: none;
+    width: 60px;
+    height: 60px;
     text-align: center;
 
 }
@@ -63,15 +65,33 @@
     color: black !important;
 }
 
+#number1{
+    padding-top: 9.2rem;
+    /* margin-top: 6.5vw !important; */
+}
+#number2{
+    padding-top: 6rem;
+    /* margin-top: 3.5vw !important; */
+}
+#number3{
+    padding-top: 6rem;
+    /* margin-top: 3.5vw !important; */
+}
 .telefones{
-    padding: 10%;
+    margin: 0 auto;
+    /* padding: 10%; */
     text-align: center;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5) inset;
-    width: 25vw;
-    border-radius: 30vw;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50vw;
     /* height: 28vw;
     width: 28vw; */
+}
+
+.telefones:hover{
+    box-shadow: 0 0 8vw rgba(0, 0, 0, 0.6) inset;
 }
 
 #formulario{
@@ -116,7 +136,7 @@ h5{
 }
 .telefones-text{
     margin: 0 auto;
-    padding: 5%;
+    /* padding: ; */
 
 }
 
@@ -127,6 +147,11 @@ h5{
     .telefones{
         margin-top: 4vw;
         width: 100%;
+    }
+}
+@media (max-width:1200px){
+    .banner h1{
+        font-size: 10vw !important;
     }
 }
 @media (max-width: 1150px){
