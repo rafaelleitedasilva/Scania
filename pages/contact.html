@@ -54,27 +54,29 @@
                                     <option value="1">CPF</option>
                                     <option value="2">CNPJ</option>
                                 </select>
-                            </div>
-                            <form class="Curso" action="https://formsubmit.co/rafael.leite.14@hotmail.com" method="POST"></form>
+                            </div>  
                             <div class="col-12 col-sm-9" style="margin:10px 0px">
                                 <input type="text" id="num" class="form-control border-0" placeholder="000.000.000-00" style="height: 55px;" onchange="validacao()">
                             </div>
+
+                            
                             <div id="formulario">
+                            <form class="Curso" action="https://formsubmit.co/rafael.leite.14@hotmail.com" method="POST">
                                 <div class="col-12 col-sm-12" style="margin:10px 0px">
                                     <label> Nome: </label>
-                                    <input type="text" class="form-control border-0" placeholder="João Ferrari" style="height: 55px;" required>
+                                    <input type="text" name="Nome" class="form-control border-0" placeholder="João Ferrari" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-12" style="margin:10px 0px">
                                     <label> Email: </label>
-                                    <input type="email" class="form-control border-0" placeholder="Fabiana@hotmail.com" style="height: 55px;" required>
+                                    <input type="email" name="Email" class="form-control border-0" placeholder="Fabiana@hotmail.com" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-12" style="margin:10px 0px">
                                     <label> Celular: </label>
-                                    <input type="text" id="celular" class="form-control border-0" placeholder="11 92345-2345" style="height: 55px;">
+                                    <input type="text" name="Celular" id="celular" class="form-control border-0" placeholder="11 92345-2345" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-24">
                                     <label> Assunto: </label>
-                                    <select class="form-select border-0 services23" style="height: 55px; border-radius: 5px;">
+                                    <select class="form-select border-0 services23" name="Serviços" style="height: 55px; border-radius: 5px;">
                                         <option selected>Serviços</option>
                                         <option value="1">Visita</option>
                                         <option value="2">Especificações</option>
@@ -86,15 +88,17 @@
                                 </div>
                                 <div class="col-12" style="margin:10px 0px; grid-column-start: 1; grid-column-end: 3;">
                                     <label> Mensagem: </label>
-                                    <textarea class="form-control border-0" placeholder="Mensagem"></textarea>
+                                    <textarea class="form-control border-0" name="Mensagem" placeholder="Mensagem"></textarea>
                                 </div>
                                 <div class="col-12" id="class-button-enviar">
                                 <button class="btn w-20 py-3" id="button-enviar" type="submit">Enviar</button>
-                        </div>
+                                <input type="hidden" name="_next" value="https://rafaelleitedasilva.github.io/Scania/pages/contact.html">
+                                <input type="hidden" name="_captcha" value="false">
+                            </form>
+                            </div>
+                            
 
-                        <input type="hidden" name="_next" value="https://rafaelleitedasilva.github.io/Scania/pages/contact.html">
-                        <input type="hidden" name="_captcha" value="false">
-                    </form>
+                        
                             </div>
                         </div>
                 </div>
