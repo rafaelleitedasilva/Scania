@@ -295,6 +295,7 @@ body, .container-grid{
     justify-items: center;
     align-items: center;    
     grid-column: span 3;
+    margin-top: 10%;
     
 }
 .atributes .six img, .five img{
@@ -440,7 +441,7 @@ body, .container-grid{
         /* padding: 2px; */
     }
      .esp-tec{
-        left: 17%;
+        left: 15%;
         padding: 5px;
      }
     .configurator h3{
