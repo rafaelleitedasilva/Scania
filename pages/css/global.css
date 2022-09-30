@@ -261,6 +261,10 @@ a{
         width: 60%;
     }
 
+    .loading-p{
+        font-size: 6vw;
+    }
+
     .col-lg-4.col-md-6 h4{
         text-align: center;
     }
