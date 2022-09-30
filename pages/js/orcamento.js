@@ -10,6 +10,8 @@ let form = document.getElementById('form')
 let form1 = document.getElementById('form1')
 let form2 = document.getElementById('form2')
 let h1 = document.getElementById('h1')
+let juros = document.getElementById('parcela')
+let multi = document.getElementById('forma')
 let moeda = `R$`
 let imposto
 
@@ -119,11 +121,10 @@ function encerrar(){
     imposto = 0.02
     break;
   }
-  console.log(valor.value)
-  console.log(formatExit(retira00(valor.value)))
-  console.log(retira00(valor.value))
-  
+
   let resultado = parseFloat(formatExit(retira00(valor.value))) + (parseFloat(formatExit(retira00(valor.value))) * parseFloat(imposto)) - parseFloat(formatExit(retira00(entrada.value)))
+  resultado = resultado + resultado *(parseFloat(multi.value)*parseFloat(juros.value))
+
   texto.innerHTML = `Você escolheu o caminhão da linha ${linha.value}, pelo(a) ${pais.value} que possui ${imposto*100}% de imposto`
   texto2.innerHTML = `A sua entrada é de ${moeda}${entrada.value} e o valor bruto do caminhão escolhido é de ${moeda}${valor.value}`
   console.log(resultado)

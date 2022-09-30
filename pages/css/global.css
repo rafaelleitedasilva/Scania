@@ -50,7 +50,6 @@ h1{
 
 .navbar{
     background-color: #040405 !important;
-    border-radius: 0px 0px 50px 50px;
     text-transform: uppercase;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
 }
