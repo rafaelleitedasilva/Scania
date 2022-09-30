@@ -218,7 +218,7 @@ body, .container-grid{
     display: flex;
     margin: 50px auto;
     text-align: justify;
-    width: 700px;
+    width: 60%;
     color: var(--silver);
 }
 .bus-container a{
@@ -381,10 +381,9 @@ body, .container-grid{
      }
      
      .desc-bus{
-        padding: 50px;
+        width: 80%;
      }
      .solutions{
-        /* grid-template-columns: 50px !important; */
         grid-template-rows: auto !important;
      }
      .solutions .col_one, .col_two{
@@ -395,47 +394,50 @@ body, .container-grid{
      }
      .atributes div>h3{
         margin-bottom: 20px;
-     }
-     
+     }  
 }
 @media(max-width:500px){ /* menor que 72*/
     .banner img{
-        height: 40vh;
-        /* height: 50vh; */
+        height: 30vh;
      }
      .banner h1{
-        font-size: 3rem;
-        bottom: 20px;
+        font-size: 2.3rem;
+        bottom: 10px;
      }
      .desc{
         display: block;
         margin: 50px auto;
-        width: 500px;
+        width: 80%;
         height: auto;
         text-align: center;
      }
      .desc p{
         padding: 5%;
-        font-size: 1rem;
-        width: 100%;
+        font-size: 0.8rem;
+        text-align: justify;
+        /* width: 80%; */
      }
      .portfolio h3{
         padding: 30px;
      }
      .bar{
-        width: 20px;
+         width: 20px;
         height: 15px;
-     }
-     .navegation{
+    }
+    .navegation{
         left: 75%;
-     }
-     .desc-line{
+    }
+    .desc-line{
         left: 20%;
-        width: 350px;
+        width: 50%;
         font-size: 1rem 
      }
+    .desc-line p {
+
+    }
      .esp-tec{
-        left: 23%;
+        left: 20%;
+        padding: 5px;
      }
     .configurator h3{
         padding: 30px;
@@ -443,16 +445,7 @@ body, .container-grid{
     .config-text h3{
         font-size: 1rem;
     }
-    .desc-bus{
-        width: 500px;
-    }
     .atributes .five img, .atributes  .six img, .atributes .seven img{
         height: 150px !important;
-    }
-}
-/* betriz que colocou isso aqui */
-@media (max-width:1200px){
-    .banner h1{
-        font-size: 10vw !important;
     }
 }
