@@ -1,117 +1,93 @@
-var form = document.getElementById("formulario");
-var documento = document.getElementById("documento");
-var num = document.getElementById("num");
+var text1 = document.getElementById("contratos");
+var text2 = document.getElementById("programas");
+var text3 = document.getElementById("fleetcare");
+var text4 = document.getElementById("scania-assistance");
+var text5 = document.getElementById("pecas");
+var text6= document.getElementById("oleos");
 
+var nver1 = document.getElementById("nver1");
+var nver2 = document.getElementById("nver2");
+var nver3 = document.getElementById("nver3");
+var nver4 = document.getElementById("nver4");
+var nver5 = document.getElementById("nver5");
+var nver6 = document.getElementById("nver6");
 
-function validacao(){
-    let soma = 0;
-    let resto = 0;
-    let valid = false;
+var ver1 = document.getElementById("ver1");
+var ver2 = document.getElementById("ver2");
+var ver3 = document.getElementById("ver3");
+var ver4 = document.getElementById("ver4");
+var ver5 = document.getElementById("ver5");
+var ver6 = document.getElementById("ver6");
 
-    if(documento.value == '1'){
+// ver 1
+function vermais1(){
+    text1.style="display: inline;"
+    nver1.style="display: inline;"
+    ver1.style="display: none;"
 
-        arrayNum = num.value.split(".")
-
-        arrayNum2 = arrayNum[2].split("-")
-
-        numEditado = arrayNum[0] + arrayNum[1] + arrayNum2[0] + arrayNum2[1]
-
-        for(i=1; i<=9; i++){
-            soma = soma + (parseInt(numEditado.substring(i-1, i)) * (11-i))
-        }
-
-        resto = (soma*10)%11
-        if(resto == 10 || resto == 11){
-            resto = 0
-        }
-        
-        
-        if(resto == numEditado.substring(9, 10)){
-            soma = 0;
-            resto = 0;
-            for(i=1; i<=10; i++){
-                soma = soma + (parseInt(numEditado.substring(i-1, i)) * (12-i))
-            }
-            resto = (soma*10)%11
-            if(resto == 10 || resto == 11){
-                resto = 0
-            }
-            if((resto == numEditado.substring(10, 11)) & (numEditado != '12345678909')){
-                valid = true
-            }
-            else{
-                valid = false
-            }
-        }
-        else{
-            valid = false
-
-        }
-
-        if(valid == true){
-            form.style = 'display: inline;'
-        }
-        else{
-            form.style = 'display: none;'
-        }
-       
-    }
-
-    else if(documento.value == '2'){
-        soma = 0
-        resto = 0
-        arrayNum = num.value.split(".")
-        arrayNum2 = arrayNum[2].split("/")
-        arrayNum3 = arrayNum2[1].split("-")
-        numEditado = arrayNum[0] + arrayNum[1] + arrayNum2[0] + arrayNum3[0] + arrayNum3[1]
-
-        multiplicadores= '543298765432'
-
-        for(i=0; i<12; i++){
-            soma = soma + (parseInt(numEditado.substring(i, i+1)) * parseInt(multiplicadores.substring(i, i+1)))
-        }
-
-        resto = soma%11
-        if(resto == 0 || resto == 1){
-            verificador1 = 0
-        }
-        else{
-            verificador1 = 11 - resto
-        }
-        
-        if(verificador1 == parseInt(numEditado.substring(12, 13))){
-            
-            soma = 0;
-            resto = 0;
-            multiplicadores= '6543298765432'
-            for(i=0; i<13; i++){
-                soma = soma + (parseInt(numEditado.substring(i, i+1)) * parseInt(multiplicadores.substring(i, i+1)))
-            }
-            resto = soma%11
-            if(resto == 0 || resto == 1){
-                verificador2 = 0
-            }
-            else{
-                verificador2 = 11 - resto
-            }
-
-            if((verificador2 == parseInt(numEditado.substring(13, 14)))){
-                valid = true
-            }
-            else{
-                valid = false
-            }
-        }
-        else{
-            valid = false
-
-        }
-
-        if(valid == true){
-            form.style = 'display: inline;'
-        }
-        else{
-            form.style = 'display: none;'
-        }
 }
+function vermenos1(){
+    ver1.style="display: inline;"
+    text1.style="display: none;"
+    nver1.style="display: none;"
+}
+// ver 2
+function vermais2(){
+    text2.style="display: inline;"
+    nver2.style="display: inline;"
+    ver2.style="display: none;"
+
+}
+function vermenos2(){
+    ver2.style="display: inline;"
+    text2.style="display: none;"
+    nver2.style="display: none;"
+}
+// ver 3
+function vermais3(){
+    text3.style="display: inline;"
+    nver3.style="display: inline;"
+    ver3.style="display: none;"
+
+}
+function vermenos3(){
+    ver3.style="display: inline;"
+    text3.style="display: none;"
+    nver3.style="display: none;"
+}
+// ver 4
+function vermais4(){
+    text4.style="display: inline;"
+    nver4.style="display: inline;"
+    ver4.style="display: none;"
+
+}
+function vermenos4(){
+    ver4.style="display: inline;"
+    text4.style="display: none;"
+    nver4.style="display: none;"
+}
+// ver 5
+function vermais5(){
+    text5.style="display: inline;"
+    nver5.style="display: inline;"
+    ver5.style="display: none;"
+
+}
+function vermenos5(){
+    ver5.style="display: inline;"
+    text5.style="display: none;"
+    nver5.style="display: none;"
+}
+// ver 6
+function vermais6(){
+    text6.style="display: inline;"
+    nver6.style="display: inline;"
+    ver6.style="display: none;"
+
+}
+function vermenos6(){
+    ver6.style="display: inline;"
+    text6.style="display: none;"
+    nver6.style="display: none;"
 }
