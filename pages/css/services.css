@@ -79,6 +79,12 @@
     grid-column-end: 4;
     padding-left: 12%;
 }
+
+.service-type2-text:hover{
+    box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5) inset;
+}
+
+
 #service-type2-middle .service-type2-text{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -185,6 +191,9 @@
     color: black;
 }
 
+.service-type3:hover{
+    box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5) inset;
+}
 
 @media(max-width:1500px){
     h1{
