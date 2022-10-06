@@ -64,6 +64,8 @@
     border-radius: 30vw;
 }
 
+
+
 #service-type2-middle img{
     grid-column: 3 !important;
     grid-row: 2;
@@ -74,14 +76,15 @@
     padding-top: 2%;
     padding-bottom: 2%;
     background-color: rgb(255, 255, 255, 0.9);
-    box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5) inset;
     grid-column-start: 2;
     grid-column-end: 4;
     padding-left: 12%;
 }
 
 .service-type2-text:hover{
-    box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 0 1.2vw rgba(255, 255, 255, 0.808);
+    cursor: pointer;
 }
 
 
@@ -192,8 +195,13 @@
 }
 
 .service-type3:hover{
-    box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5) inset;
+    cursor: pointer;
+    box-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.808);
 }
+
+
+
+
 
 @media(max-width:1500px){
     h1{
